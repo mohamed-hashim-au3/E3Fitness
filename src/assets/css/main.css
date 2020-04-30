@@ -77,7 +77,10 @@ ul {
 /* comon UI End*/
 
 /*Menu section start*/
-
+.navbar {
+  background-color: black !important;
+  height: 7rem !important;
+}
 .navbar-flex {
   display: flex !important;
   justify-content: space-between;
@@ -164,8 +167,74 @@ ul.main-menu-links-mobile a {
   background-color: #0a0a0a57;
   position: absolute;
   z-index: 9999999 !important;
-  height: 50px;
+  height: 40px;
 }
+
+/* dropdowns section */
+
+/* Dropdown Button */
+.m-dropbtn {
+  color: white;
+  padding: 0 0.6em;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.m-dropdown {
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.m-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 13rem;
+  color: var(--color-primary);
+  box-shadow: 0px 0.8rem 1.6rem 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-family: "MyriadPro", sans-serif !important;
+  font-size: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Links inside the dropdown */
+.m-dropdown-content .mdropdown-link {
+  color: white;
+  padding: 0.3em 0em;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 2rem;
+  font-family: "MyriadPro", sans-serif !important;
+}
+
+/* Change color of dropdown links on hover */
+.m-dropdown-content a:hover {
+  background-color: black;
+  color: var(--color-primary);
+}
+
+/* Show the dropdown menu on hover */
+.m-dropdown:hover .m-dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.m-dropdown:hover .m-dropbtn {
+  background-color: transparent;
+}
+
+.dropdown-divider {
+  height: 0;
+  margin: 0.2rem 2.3rem !important;
+  overflow: hidden;
+  border-top: 4px solid var(--color-primary) !important;
+}
+
 /*Menu section end*/
 
 /*Banner Section start*/
@@ -181,12 +250,9 @@ ul.main-menu-links-mobile a {
 /*Banner Section end*/
 
 /*upcoming class section start*/
+/*upcoming class section start*/
 .upcoming-class {
   padding-left: 0px !important;
-}
-.col-sm {
-  padding-left: 0px !important;
-  padding-right: 0px !important;
 }
 .upcoming-class h1.light-blue {
   color: #ffffff;
@@ -194,18 +260,25 @@ ul.main-menu-links-mobile a {
   position: absolute;
   top: -5rem;
   font-weight: 700;
-  background-color: var(--color-primary) !important;
+  background-color: #00a99d;
   padding: 1rem 3rem;
 }
 .upcoming-class .col.col1 {
   padding: 0px;
 }
+.blue-text1 {
+  color: #00a99d;
+  font-family: "Xirod", sans-serif !important;
+  font-size: 2rem;
+}
 .blue-text {
-  color: var(--color-primary);
+  color: #00a99d;
+
+  font-size: 2rem;
 }
 h3.blue-text {
-  color: var(--color-primary);
-  font-size: 2.2rem;
+  color: #00a99d;
+  font-size: 2rem;
   font-weight: 500;
 }
 .upcoming-class h3.blue-text {
@@ -214,16 +287,84 @@ h3.blue-text {
 .upcoming-class .col {
   padding: 0px;
 }
+img.img-fluid.more-item {
+  width: 3rem;
+}
+.upcoming-class {
+  padding: 0rem 0rem 3rem 0rem;
+}
+.col-sm {
+  padding-right: 0em !important;
+  padding-left: 0em !important;
+}
 
-/*upcoming class section end*/
+/*blog-section start*/
+/*blog-section start*/
+.latest-post-heading h1.light-blue {
+  color: #ffffff;
+  text-transform: uppercase;
+  position: absolute;
+  top: 2rem;
+  font-weight: 700;
+  background-color: #00a99d;
+  padding: 1rem 1rem;
+}
+section.latest-post {
+  background-color: #f1f1f1;
+  padding: 1em;
+}
+.blog-content {
+  padding: 2.5em 5em;
+  background-color: white;
+}
+.readmore-bg {
+  background-color: #00a99d;
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+}
+.divider-gap {
+  height: 15px;
+}
+.latest-post h1.light-blue {
+  color: #ffffff;
+  text-transform: uppercase;
+  position: absolute;
+  top: 2rem;
+  font-weight: 700;
+  background-color: #00a99d;
+  padding: 1rem 2rem;
+  z-index: 9;
+  left: 1.4rem;
+}
+section.latest-post .row:first-child {
+  padding-top: 8rem;
+}
+/*blog-sectionm end*/
 
+/*blog-sectionm end*/
 /*booking class-sectionm start*/
 section.booking-class {
   background-image: url("../images/booking-class-bg.jpg");
-  height: 210px;
   background-size: cover;
   background-attachment: fixed;
-  margin: 6rem 0 10rem 0;
+  margin: 0rem 0 10rem 0;
+}
+
+section.booking-class-new {
+  background-image: url("../images/booking-class-bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0rem;
+  padding: 4rem 2rem;
+}
+
+.booking-now-btn .btn {
+  font-size: 2rem;
+  background-color: #00a99d;
+}
+section.booking-class-new h1.white-text {
+  font-size: 3rem;
+  text-transform: uppercase;
 }
 .white-text {
   color: #fff;
@@ -238,42 +379,26 @@ section.booking-class {
   padding: 2em 1em;
 }
 a.blue-bg-text {
-  background-color: var(--color-primary);
-  padding: 1rem 3rem;
+  background-color: #00a99d;
+  padding: 0.5rem 1.2rem;
   position: absolute;
-  top: 6rem;
-  font-size: 3rem;
+  top: 6.5rem;
+  font-size: 2.5rem;
 }
+
+.booking-flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.booking-now-btn a.book-btn {
+  background-color: #00a99d;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 2.5rem;
+}
+
 /*booking class-sectionm end*/
-
-/*blog-section start*/
-.latest-post-heading h1.light-blue {
-  color: #ffffff;
-  text-transform: uppercase;
-  position: absolute;
-  top: -5rem;
-  font-weight: 700;
-  background-color: var(--color-primary);
-  padding: 1rem 1rem;
-}
-section.latest-post {
-  background-color: #f1f1f1;
-  padding: 1em;
-}
-.blog-content {
-  padding: 2.5em 5em;
-  background-color: white;
-}
-.readmore-bg {
-  background-color: var(--color-primary);
-  padding: 1rem 3rem;
-  font-size: 1.8rem;
-}
-.divider-gap {
-  height: 15px;
-}
-
-/*blog-sectionm end*/
 
 /* ABOUT US PAGE CSS STRATS HERE  */
 
@@ -286,13 +411,12 @@ section.latest-post {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.about-banner-section h2.blue-text {
+.about-banner-section h2.blue-text1 {
   position: absolute;
   top: 15rem;
   left: 5rem;
   font-size: 5rem;
   font-weight: 700;
-  font-family: "Xirod", sans-serif;
 }
 /* banner section ends */
 
@@ -302,20 +426,22 @@ h1.heading-text-blue {
   text-transform: uppercase;
   padding: 3rem;
   font-size: 3rem;
+  color: #fff;
 }
 .about-content.inner-content {
   padding: 2rem 1rem;
 }
 section.about-content p {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
+  color: #fff;
 }
 section.about-content h1.white-text {
-  background-color: var(--color-primary);
+  background-color: #00a99d;
   padding: 5rem;
   font-size: 5rem;
 }
 section.about-content {
-  padding: 4rem;
+  background-color: #404040;
 }
 .sports-image {
   padding: 5rem;
@@ -327,12 +453,203 @@ section#about-booking-section {
 
 /* ABOUT US PAGE CSS ENDS  HERE  */
 
+/*TRAINERS PAGE CSS STARTS */
+
+/*meet team Banner Section start */
+.meet-team-section h2.blue-text {
+  position: absolute;
+  top: 15rem;
+  left: 5rem;
+  font-size: 5rem;
+  font-weight: 700;
+}
+.meet-team-section {
+  background-image: url("../images/meet-team-bg.jpg");
+  background-attachment: fixed;
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.meet-team-members {
+  padding: 3rem 1em;
+  background-color: #1d1d1d;
+}
+.meet-team-members h3.blue-text {
+  padding: 1rem 0 0;
+}
+/*meet team Banner Section end */
+/*TRAINERS PAGE CSS ENDS */
+
+/*CLASSES CATEGORY PAGE CSS STATRS */
+
+/*power zone banner start */
+.power-zone-section {
+  background-image: url("../images/power-zone.jpg");
+  background-attachment: fixed;
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.power-zone-section h2.blue-text {
+  position: absolute;
+  top: 15rem;
+  left: 5rem;
+  font-size: 5rem;
+  font-weight: 700;
+}
+.power-book-section section.booking-class {
+  background-image: url("../images/booking-class-bg.jpg");
+  height: 20rem !important;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0rem 0 0rem 0 !important;
+}
+
+/*power zone banner end */
+
+/*Power zone card section Start*/
+.power-zone-card-section {
+  padding: 6rem 3rem;
+}
+.power-zone-innercontent h2 {
+  font-size: 2.5rem;
+}
+.power-zone-innercontent span {
+  padding-right: 0.5em;
+}
+.power-zone-innercontent p {
+  padding: 1rem 0;
+}
+ul.equipment {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 0;
+  padding-top: 2rem;
+}
+ul.equipment span {
+  width: 2rem;
+}
+ul.equipment li {
+  padding-right: 0;
+}
+.card-section-additem .more-item {
+  position: absolute;
+  right: 0;
+  width: 5rem !important;
+  bottom: 2rem;
+}
+.power-zone-card-section .row {
+  padding-bottom: 5rem;
+}
+/*Power zone card section End*/
+
+/*classes category PAGE CSS ENDS */
+
+/*POWEER CLASS page css Starts */
+
+/*Power main banner section start*/
+.power-main-section {
+  background-image: url(../images/power-zone-main.jpg);
+  background-attachment: fixed;
+  height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.power-main-heading {
+  padding: 0rem 2rem;
+}
+.power-main-heading h1.blue-text {
+  font-size: 4rem;
+  font-weight: 700;
+  position: absolute;
+  top: -6rem;
+  font-family: "Xirod", sans-serif !important;
+}
+.bottom-powerbanner-content p {
+  padding: 3rem;
+  background-color: #343434;
+  color: #fff;
+  margin-bottom: 0;
+}
+/*Power main banner section end*/
+section.power-zone-content {
+  background-color: #1f1f1f;
+}
+
+.power-zone-content h1.blue-text {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.power-zone-content p {
+  color: #fff;
+}
+
+/*Power inner content start */
+section.power-zone-content .row {
+  padding: 3rem 3rem;
+}
+/* power inner content end */
+
+/*Power Class Page  css Ends */
+
+/*SENIOR CLASS page css starts */
+.senior-main-section {
+  background-image: url(../images/senior-inner.jpg);
+  background-attachment: fixed;
+  height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.senior-main-heading {
+  padding: 0rem 2rem;
+}
+.senior-main-heading h1.blue-text {
+  font-size: 4rem;
+  font-weight: 700;
+  position: absolute;
+  top: -6rem;
+  font-family: "Xirod", sans-serif !important;
+}
+/*SENIOR Class Page  css Ends */
+
+/*YOUTH CLASS page css starts */
+.youth-main-section {
+  background-image: url(../images/youth-inner.jpg);
+  background-attachment: fixed;
+  height: 80vh;
+
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.youth-main-heading {
+  padding: 0rem 2rem;
+}
+.youth-main-heading h1.blue-text {
+  font-size: 4rem;
+  font-weight: 700;
+  position: absolute;
+  top: -6rem;
+  font-family: "Xirod", sans-serif !important;
+}
+/*YOUTH Class Page  css Ends */
+
 /*footer section start */
 ul.footer-links {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 ul.footer-links a {
   padding: 1.5rem;
@@ -404,7 +721,7 @@ section.footer-section {
   /*upcoming section*/
 
   /*booking section */
-  section.booking-class {
+  /* section.booking-class {
     background-image: url("../images/booking-class-bg.jpg");
     margin: 6rem 0 10rem 0;
     height: 10rem;
@@ -422,7 +739,7 @@ section.footer-section {
     font-size: 2.5rem;
     text-transform: uppercase;
     padding: 1em 1em;
-  }
+  } */
   /*booking section*/
 }
 
@@ -452,21 +769,25 @@ section.footer-section {
     display: flex;
     /* float: right; */
     position: absolute;
+    justify-content: space-between;
     padding: 0 0;
   }
   ul.main-menu-links {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.3em 0 !important;
+    width: 100vw;
+
+    padding: 0.3em 0.5em !important;
   }
   ul.main-menu-links li {
-    padding: 0em 0.6em;
+    padding: 0em 0em;
   }
   ul.main-menu-links li a {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #fff;
     font-family: "Xirod", sans-serif;
+    font-weight: bold;
   }
 
   /* upcoming class section */
@@ -477,11 +798,11 @@ section.footer-section {
     padding-right: 0px !important;
   }
   /* booking banner */
-  section.booking-class {
+  /* section.booking-class {
     background-image: url("../images/booking-class-bg.jpg");
     margin: 6rem 0 10rem 0;
     height: 20rem;
-  }
+  } */
 
   /*footer-section*/
   ul.footer-links {
@@ -497,4 +818,179 @@ section.footer-section {
   }
 
   /*footer-section*/
+}
+/* MEdia Queries */
+
+@media (max-width: 1100px) {
+  /*Power zone Page */
+  .power-book-section section.booking-class {
+    background-image: url("../images/booking-class-bg.jpg");
+    height: 40rem !important;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0rem 0 0rem 0 !important;
+  }
+  /*Power zone Page */
+
+  /*booking now new section*/
+  .booking-now-btn a.book-btn {
+  }
+  section.booking-class-new h1.white-text {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+  }
+  /*booking now new section*/
+}
+@media (max-width: 768px) {
+  /*upcoming button section heading start*/
+  .latest-post-heading h1.light-blue {
+    color: #ffffff;
+    text-transform: uppercase;
+    position: absolute;
+    top: 5rem;
+    font-weight: 700;
+    background-color: #00a99d;
+    padding: 1rem 1rem;
+    font-size: 1.8rem;
+    text-align: center;
+    left: 4rem;
+  }
+  /*upcoming button section heading end*/
+  /**/
+  /*book class new btn start*/
+  section.booking-class-new h1.white-text {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+  .booking-now-btn .btn {
+    font-size: 1.5rem;
+    background-color: #00a99d;
+  }
+  /*book class new btn end */
+  /*Banner Section*/
+  .container-fluid.main-banner {
+    background-image: url("../images/main-banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    background-position: top;
+  }
+  .main-menuadjust.relative {
+    width: 100%;
+    background-color: #0a0a0a00;
+  }
+  /*Banner Section*/
+
+  /*Top-nav-section*/
+  /* .logo-link {
+    display: none !important;
+  } */
+  .signup-links a {
+    background-color: #00a99d;
+    padding: 0.5rem 2rem;
+  }
+  .bg-dark {
+    background-color: #fff !important;
+  }
+  /* .main-menu {
+    display: none !important;
+  } */
+  /*top-navsection*/
+
+  /*upcoming section*/
+  .col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: auto;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+  .upcoming-class h1.light-blue {
+    width: 100%;
+    text-align: center;
+  }
+
+  /*upcoming section*/
+
+  /*booking section */
+  section.booking-class {
+    background-image: url("../images/booking-class-bg.jpg");
+    height: 75vh;
+  }
+  a.blue-bg-text {
+    background-color: #00a99d;
+    padding: 1rem 2rem;
+    position: absolute;
+    top: -5rem;
+    font-size: 2rem;
+    left: 5rem;
+  }
+  /*booking section*/
+
+  /* power main page start */
+  .power-main-section {
+    background-image: url("../images/power-zone-main.jpg");
+    background-attachment: fixed;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  /* power main page end */
+}
+
+/* @media (min-width: 768px) {
+  .logo-link-mobile {
+    display: none !important;
+  }
+  ul.main-menu-links-mobile {
+    padding-left: 0rem;
+    display: none;
+  }
+} */
+@media (max-width: 580px) {
+  /*booking class section */
+  section.booking-class-new h1.white-text {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+  .booking-now-btn .btn {
+    font-size: 0.9rem;
+    background-color: #00a99d;
+  }
+  /*booking class section */
+  .main-menuadjust.relative {
+    width: 100%;
+    background-color: #0a0a0a57 !important;
+  }
+  /*footer-section*/
+  ul.footer-links {
+    display: flex;
+    flex-direction: row;
+  }
+  ul.footer-links {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
+  /*footer-section*/
+}
+
+@media (max-width: 420px) {
+  /*booking class section */
+  section.booking-class-new h1.white-text {
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  section.booking-class-new {
+    padding: 4rem 0rem;
+  }
+  /*booking class section */
+  .main-menuadjust.relative {
+    width: 100%;
+    background-color: #0a0a0a57 !important;
+  }
 }

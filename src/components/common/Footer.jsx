@@ -1,13 +1,14 @@
 import React from "react";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
 function Footer() {
   return (
     <>
-      <section className="footer-section">
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col text-center">
-              <ul className="footer-links">
+      <section class="footer-section">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col text-center">
+              <ul class="footer-links">
                 <li>
                   <a href="/">Home</a>
                 </li>
@@ -25,12 +26,12 @@ function Footer() {
                 </li>
                 <li>
                   <a href="/">
-                    <i className="fa fa-instagram" aria-hidden="true"></i>
+                    <FontAwesomeIcon icon={faInstagram} />
                   </a>
                 </li>
                 <li>
                   <a href="/">
-                    <i className="fa fa-facebook-square" aria-hidden="true"></i>
+                    <FontAwesomeIcon icon={faFacebook} />
                   </a>
                 </li>
               </ul>

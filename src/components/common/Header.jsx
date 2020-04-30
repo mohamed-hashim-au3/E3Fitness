@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-dark top-navigation">
+      <nav className="navbar navbar-expand-lg navbar-light top-navigation">
         <div className="navbar-flex">
           <ul className="navbar-nav mr-lg-auto">
             <li className="nav-item active">
@@ -33,7 +33,33 @@ function Header() {
                     <Link to="/aboutus">ABOUT US</Link>
                   </li>
                   <li>
-                    <Link to="/classes">CLASSES</Link>
+                    <div className="m-dropdown">
+                      <Link className="m-dropbtn" to="/">
+                        CLASSES
+                      </Link>
+                      <div className="m-dropdown-content">
+                        <Link
+                          to="/classes/power_class"
+                          className="mdropdown-link"
+                        >
+                          POWER
+                        </Link>
+                        <div class="dropdown-divider"></div>
+                        <Link
+                          to="/classes/senior_class"
+                          className="mdropdown-link"
+                        >
+                          SENIOR
+                        </Link>
+                        <div class="dropdown-divider"></div>
+                        <Link
+                          to="/classes/youth_class"
+                          className="mdropdown-link"
+                        >
+                          YOUTH
+                        </Link>
+                      </div>
+                    </div>
                   </li>
                   <li>
                     <Link to="/blog">BLOG</Link>

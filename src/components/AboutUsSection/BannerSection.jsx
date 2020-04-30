@@ -7,7 +7,7 @@ function BannerSection() {
         <div className="container-fluid  relative">
           <div className="row">
             <div className="col-md-12 col-lg-12 col-sm-12">
-              <h2 className="blue-text">ABOUT US</h2>
+              <h2 className="blue-text1">ABOUT US</h2>
             </div>
           </div>
         </div>

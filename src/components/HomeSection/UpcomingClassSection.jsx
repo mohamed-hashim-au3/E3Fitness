@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import img1 from "../../assets/images/up-one.jpg";
 import img2 from "../../assets/images/up-two.jpg";
 import img3 from "../../assets/images/up-three.jpg";
 import img4 from "../../assets/images/up-four.jpg";
 import img5 from "../../assets/images/up-five.jpg";
+import WOW from "wowjs";
 import { ReactComponent as Moree } from "../../assets/images/moree.svg";
 function UpcomingClassSection() {
+  useEffect(() => {
+    const wow = new WOW.WOW();
+    // ---- ^^ const wow = WOW(); maybe new syntax, check docs! ^^----
+    wow.init();
+  }, []);
   return (
     <>
       <div className="container-fluid main-banner">
@@ -19,8 +25,8 @@ function UpcomingClassSection() {
           <div className="row text-center ">
             <div
               className="col-sm upcoming-container wow fadeInUp"
-              data-wow-duration="1.6s"
-              data-wow-delay="1s"
+              data-wow-duration="1s"
+              data-wow-delay="0.5s"
             >
               <img src={img1} alt="Clasesbanner" className="img-fluid" />
               <h3 className="blue-text">Power ZONE</h3>
@@ -31,8 +37,8 @@ function UpcomingClassSection() {
             </div>
             <div
               className="col-sm  upcoming-container wow fadeInUp  "
-              data-wow-duration="1.6s"
-              data-wow-delay="1.1s"
+              data-wow-duration="1s"
+              data-wow-delay="0.5s"
             >
               <img src={img2} alt="" className="img-fluid" />
               <h3 className="blue-text">Power HIT</h3>
@@ -43,8 +49,8 @@ function UpcomingClassSection() {
             </div>
             <div
               className="col-sm  upcoming-container wow fadeInUp"
-              data-wow-duration="1.6s"
-              data-wow-delay="1.2s"
+              data-wow-duration="1s"
+              data-wow-delay="0.5s"
             >
               <img src={img3} alt="" className="img-fluid" />
               <h3 className="blue-text">Power CORE</h3>
@@ -55,8 +61,8 @@ function UpcomingClassSection() {
             </div>
             <div
               className="col-sm  upcoming-container wow fadeInUp"
-              data-wow-duration="1.6s"
-              data-wow-delay="1.3s"
+              data-wow-duration="1s"
+              data-wow-delay="0.5s"
             >
               <img src={img4} alt="" className="img-fluid" />
               <h3 className="blue-text">Power CARDIO</h3>
@@ -67,8 +73,8 @@ function UpcomingClassSection() {
             </div>
             <div
               className="col-sm  upcoming-container wow fadeInUp"
-              data-wow-duration="1.6s"
-              data-wow-delay="1.4s"
+              data-wow-duration="1s"
+              data-wow-delay="0.5s"
             >
               <img src={img5} alt="" className="img-fluid" />
               <h3 className="blue-text">Power ZEN</h3>
