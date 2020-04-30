@@ -1,0 +1,500 @@
+@font-face {
+  font-family: "MyriadPro";
+  src: url("../fonts/MyriadPro-Regular/MyriadPro-Regular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/MyriadPro-Regular//MyriadPro-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts//MyriadPro-Regular/MyriadPro-Regular.otf")
+      format("opentype"),
+    /* Open Type Font */
+      url("../fonts//MyriadPro-Regular/MyriadPro-Regular.svg") format("svg"),
+    /* Legacy iOS */ url("../fonts//MyriadPro-Regular/MyriadPro-Regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts//MyriadPro-Regular/MyriadPro-Regular.woff") format("woff"),
+    /* Modern Browsers */
+      url("../fonts/MyriadPro-Regular/MyriadPro-Regular.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Xirod";
+  src: url("../fonts/Xirod/xirod.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Xirod/xirod.eot#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts//Xirod/xirod.otf") format("opentype"),
+    /* Open Type Font */ url("../fonts//Xirod/xirod.svg") format("svg"),
+    /* Legacy iOS */ url("../fonts//Xirod/xirod.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/Xirod//xirod.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/Xirod//xirod.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --color-primary: #00a99d;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html body {
+  margin: 0;
+
+  font-size: 1.6rem;
+  font-family: "MyriadPro", "Xirod", sans-serif;
+}
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+ul {
+  list-style: none;
+}
+.relative {
+  position: relative;
+}
+.p-l-0 {
+  padding-left: 0px !important;
+}
+/* comon UI End*/
+
+/*Menu section start*/
+
+.navbar-flex {
+  display: flex !important;
+  justify-content: space-between;
+  min-width: 98vw;
+}
+
+.bg-dark {
+  background-color: #212121 !important;
+}
+.logo-link {
+  font-size: 3rem;
+  color: var(--color-primary) !important;
+  font-weight: bold;
+  font-family: "Xirod", sans-serif !important;
+  display: flex !important;
+}
+.logo-link .logo-text {
+  margin-top: 0.5em;
+  margin-left: 0.2em;
+  font-size: 2rem;
+  color: #c5d6cc;
+  font-weight: bold;
+  font-family: "Xirod", sans-serif !important;
+}
+.logo-link-mobile {
+  font-size: 5rem;
+  color: var(--color-primary) !important;
+  font-weight: bold;
+  font-family: "Xirod", sans-serif !important;
+}
+.signup-links button {
+  background-color: var(--color-primary);
+  padding: 0.5em 1em;
+  color: #fff !important;
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  outline-style: none;
+}
+.signup-links button:focus {
+  outline-style: none;
+  outline: none;
+}
+.signup-links button:hover {
+  transform: scale(1.1);
+}
+.signup-links button:active {
+  transform: scale(0.92);
+}
+.main-menu {
+  display: flex;
+  /* float: right; */
+  position: absolute;
+  right: 0;
+}
+ul.main-menu-links {
+  display: inline-flex;
+  align-items: center;
+}
+ul.main-menu-links li {
+  padding: 1rem 2rem;
+  font-family: "Xirod", sans-serif;
+}
+ul.main-menu-links li a {
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: 400;
+  cursor: pointer;
+}
+ul.main-menu-links li a:hover {
+  color: var(--color-primary);
+}
+
+ul.main-menu-links-mobile {
+  padding-left: 0rem;
+}
+ul.main-menu-links-mobile a {
+  line-height: 1.6em;
+  color: #5f5353;
+  font-size: 1.6rem;
+}
+.main-menuadjust.relative {
+  width: 100%;
+  background-color: #0a0a0a57;
+  position: absolute;
+  z-index: 9999999 !important;
+  height: 50px;
+}
+/*Menu section end*/
+
+/*Banner Section start*/
+.container-fluid.main-banner {
+  background-image: url("../images//main-banner.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 85vh;
+  max-height: 850px;
+}
+/*Banner Section end*/
+
+/*upcoming class section start*/
+.upcoming-class {
+  padding-left: 0px !important;
+}
+.col-sm {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.upcoming-class h1.light-blue {
+  color: #ffffff;
+  text-transform: uppercase;
+  position: absolute;
+  top: -5rem;
+  font-weight: 700;
+  background-color: var(--color-primary) !important;
+  padding: 1rem 3rem;
+}
+.upcoming-class .col.col1 {
+  padding: 0px;
+}
+.blue-text {
+  color: var(--color-primary);
+}
+h3.blue-text {
+  color: var(--color-primary);
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+.upcoming-class h3.blue-text {
+  padding-top: 3rem;
+}
+.upcoming-class .col {
+  padding: 0px;
+}
+
+/*upcoming class section end*/
+
+/*booking class-sectionm start*/
+section.booking-class {
+  background-image: url("../images/booking-class-bg.jpg");
+  height: 210px;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 6rem 0 10rem 0;
+}
+.white-text {
+  color: #fff;
+}
+.booking-class .white-text {
+  color: #fff;
+}
+.booking-class h1.white-text {
+  color: #fff;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  padding: 2em 1em;
+}
+a.blue-bg-text {
+  background-color: var(--color-primary);
+  padding: 1rem 3rem;
+  position: absolute;
+  top: 6rem;
+  font-size: 3rem;
+}
+/*booking class-sectionm end*/
+
+/*blog-section start*/
+.latest-post-heading h1.light-blue {
+  color: #ffffff;
+  text-transform: uppercase;
+  position: absolute;
+  top: -5rem;
+  font-weight: 700;
+  background-color: var(--color-primary);
+  padding: 1rem 1rem;
+}
+section.latest-post {
+  background-color: #f1f1f1;
+  padding: 1em;
+}
+.blog-content {
+  padding: 2.5em 5em;
+  background-color: white;
+}
+.readmore-bg {
+  background-color: var(--color-primary);
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+}
+.divider-gap {
+  height: 15px;
+}
+
+/*blog-sectionm end*/
+
+/* ABOUT US PAGE CSS STRATS HERE  */
+
+/* banner section starts */
+.about-banner-section {
+  background-image: url("../images/about-banner.jpg");
+  background-attachment: fixed;
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-banner-section h2.blue-text {
+  position: absolute;
+  top: 15rem;
+  left: 5rem;
+  font-size: 5rem;
+  font-weight: 700;
+  font-family: "Xirod", sans-serif;
+}
+/* banner section ends */
+
+/*about banner content*/
+h1.heading-text-blue {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 3rem;
+  font-size: 3rem;
+}
+.about-content.inner-content {
+  padding: 2rem 1rem;
+}
+section.about-content p {
+  font-size: 1.8rem;
+}
+section.about-content h1.white-text {
+  background-color: var(--color-primary);
+  padding: 5rem;
+  font-size: 5rem;
+}
+section.about-content {
+  padding: 4rem;
+}
+.sports-image {
+  padding: 5rem;
+}
+section#about-booking-section {
+  margin-bottom: 0;
+}
+/*about banner content*/
+
+/* ABOUT US PAGE CSS ENDS  HERE  */
+
+/*footer section start */
+ul.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+ul.footer-links a {
+  padding: 1.5rem;
+  color: #fff;
+}
+section.footer-section {
+  background-color: #252525;
+  padding: 2rem;
+}
+/* footer ends */
+
+/* Media queries */
+
+@media (max-width: 768px) {
+  /*Banner Section*/
+  html {
+    font-size: 55%;
+  }
+  .container-fluid.main-banner {
+    background-image: url("../images/main-banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    background-position: top;
+  }
+
+  .signup-links button {
+    background-color: var(--color-primary);
+    padding: 0.5rem 2rem;
+  }
+  .bg-dark {
+    background-color: #fff !important;
+  }
+  .main-menu {
+    display: flex;
+    /* float: right; */
+    position: absolute;
+  }
+  ul.main-menu-links {
+    display: inline-flex;
+    padding: 0.3em 0 !important;
+  }
+  ul.main-menu-links li {
+    padding: 0.5em 1.2em;
+  }
+  ul.main-menu-links li a {
+    font-size: 1.6rem;
+    color: #fff;
+    font-family: "Xirod", sans-serif;
+  }
+
+  /*top-navsection*/
+
+  /*upcoming section*/
+  .col-sm {
+    -ms-flex-preferred-size: 0;
+    flex-basis: auto;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+  .upcoming-class h1.light-blue {
+    width: 100%;
+    text-align: center;
+  }
+
+  /*upcoming section*/
+
+  /*booking section */
+  section.booking-class {
+    background-image: url("../images/booking-class-bg.jpg");
+    margin: 6rem 0 10rem 0;
+    height: 10rem;
+  }
+  a.blue-bg-text {
+    background-color: var(--color-primary);
+    padding: 1rem 3rem;
+    position: absolute;
+    top: 25%;
+    font-size: 2rem;
+    left: 5rem;
+  }
+  .booking-class h1.white-text {
+    color: #fff;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: 1em 1em;
+  }
+  /*booking section*/
+}
+
+/* @media (min-width: 768px) {
+  .logo-link-mobile {
+    display: none !important;
+  }
+  ul.main-menu-links-mobile {
+    padding-left: 0rem;
+    display: none;
+  }
+} */
+@media (max-width: 580px) {
+  html {
+    font-size: 50%;
+  }
+
+  /* nav-bar main menu */
+  .main-menuadjust.relative {
+    width: 100%;
+    background-color: #0a0a0a57;
+    position: absolute;
+    z-index: 9999999 !important;
+    height: 5rem;
+  }
+  .main-menu {
+    display: flex;
+    /* float: right; */
+    position: absolute;
+    padding: 0 0;
+  }
+  ul.main-menu-links {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3em 0 !important;
+  }
+  ul.main-menu-links li {
+    padding: 0em 0.6em;
+  }
+  ul.main-menu-links li a {
+    font-size: 0.9rem;
+    color: #fff;
+    font-family: "Xirod", sans-serif;
+  }
+
+  /* upcoming class section */
+  .upcoming-container {
+    margin-top: 1.5em;
+  }
+  .col-sm {
+    padding-right: 0px !important;
+  }
+  /* booking banner */
+  section.booking-class {
+    background-image: url("../images/booking-class-bg.jpg");
+    margin: 6rem 0 10rem 0;
+    height: 20rem;
+  }
+
+  /*footer-section*/
+  ul.footer-links {
+    display: flex;
+    flex-direction: row;
+  }
+  ul.footer-links {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /*footer-section*/
+}
