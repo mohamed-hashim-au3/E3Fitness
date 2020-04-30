@@ -22,7 +22,12 @@ function CategorySection() {
               data-wow-duration="1.6s"
               data-wow-delay=".6s"
             >
-              <h1 className="blue-text">POWER ZONE</h1>
+              <h1
+                className="blue-text"
+                style={{ fontFamily: "Xirod,sans-serif" }}
+              >
+                POWER ZONE
+              </h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                 diam nonummy nibh euismod tincidunt ut laoreet dolore magna
@@ -61,7 +66,12 @@ function CategorySection() {
               data-wow-duration="1.6s"
               data-wow-delay=".8s"
             >
-              <h1 className="blue-text">POWER HIT</h1>
+              <h1
+                className="blue-text"
+                style={{ fontFamily: "Xirod,sans-serif" }}
+              >
+                POWER HIT
+              </h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                 diam nonummy nibh euismod tincidunt ut laoreet dolore magna
@@ -100,7 +110,12 @@ function CategorySection() {
               data-wow-duration="1.6s"
               data-wow-delay="1s"
             >
-              <h1 className="blue-text">POWER CARDIO</h1>
+              <h1
+                className="blue-text"
+                style={{ fontFamily: "Xirod,sans-serif" }}
+              >
+                POWER CARDIO
+              </h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                 diam nonummy nibh euismod tincidunt ut laoreet dolore magna
@@ -139,7 +154,12 @@ function CategorySection() {
               data-wow-duration="1.6s"
               data-wow-delay="1.2s"
             >
-              <h1 className="blue-text">POWER DANCE</h1>
+              <h1
+                className="blue-text"
+                style={{ fontFamily: "Xirod,sans-serif" }}
+              >
+                POWER DANCE
+              </h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                 diam nonummy nibh euismod tincidunt ut laoreet dolore magna
@@ -178,7 +198,12 @@ function CategorySection() {
               data-wow-duration="1.6s"
               data-wow-delay="1.4s"
             >
-              <h1 className="blue-text">POWER ZEN</h1>
+              <h1
+                className="blue-text"
+                style={{ fontFamily: "Xirod,sans-serif" }}
+              >
+                POWER ZEN
+              </h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                 diam nonummy nibh euismod tincidunt ut laoreet dolore magna
