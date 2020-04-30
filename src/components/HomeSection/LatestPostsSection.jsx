@@ -4,9 +4,9 @@ import img1 from "../../assets/images/blog-1.jpg";
 import img2 from "../../assets/images/blog-2.jpg";
 import img3 from "../../assets/images/blog-3.jpg";
 function LatestPostsSection() {
-  useEffect(() => {
-    new WOW().init();
-  });
+  // useEffect(() => {
+  //   new WOW().init();
+  // });
   return (
     <>
       <div class="container-fluid latest-post-heading p-l-0">

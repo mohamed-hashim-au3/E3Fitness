@@ -6,7 +6,7 @@ import BookingBanner from "./common/BookingBanner";
 import Footer from "./common/Footer";
 function AboutUs() {
   return (
-    <>
+    <> 
       <Header />
       <BannerSection />
       <ContentSection />
