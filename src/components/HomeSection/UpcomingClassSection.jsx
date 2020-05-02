@@ -25,7 +25,7 @@ function UpcomingClassSection() {
           <div className="row text-center ">
             <div
               className="col-sm upcoming-container wow fadeInUp"
-              data-wow-duration="1s"
+              data-wow-duration="0.5s"
               data-wow-delay="0.5s"
             >
               <img src={img1} alt="Clasesbanner" className="img-fluid" />
@@ -37,7 +37,7 @@ function UpcomingClassSection() {
             </div>
             <div
               className="col-sm  upcoming-container wow fadeInUp  "
-              data-wow-duration="1s"
+              data-wow-duration="0.5s"
               data-wow-delay="0.5s"
             >
               <img src={img2} alt="" className="img-fluid" />
@@ -49,7 +49,7 @@ function UpcomingClassSection() {
             </div>
             <div
               className="col-sm  upcoming-container wow fadeInUp"
-              data-wow-duration="1s"
+              data-wow-duration="0.5s"
               data-wow-delay="0.5s"
             >
               <img src={img3} alt="" className="img-fluid" />
@@ -61,7 +61,7 @@ function UpcomingClassSection() {
             </div>
             <div
               className="col-sm  upcoming-container wow fadeInUp"
-              data-wow-duration="1s"
+              data-wow-duration="0.5s"
               data-wow-delay="0.5s"
             >
               <img src={img4} alt="" className="img-fluid" />
@@ -71,11 +71,7 @@ function UpcomingClassSection() {
                 <Moree />
               </span>
             </div>
-            <div
-              className="col-sm  upcoming-container wow fadeInUp"
-              data-wow-duration="1s"
-              data-wow-delay="0.5s"
-            >
+            <div className="col-sm  upcoming-container">
               <img src={img5} alt="" className="img-fluid" />
               <h3 className="blue-text">Power ZEN</h3>
               <p>20/04/2020</p>

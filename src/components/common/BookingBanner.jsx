@@ -12,7 +12,7 @@ function BookingBanner() {
         <div className="booking-flex-container">
           <div
             className="booking-head-text wow fadeInUp"
-            data-wow-duration="1s"
+            data-wow-duration="0.5s"
             data-wow-delay="0.5s"
           >
             <h1 className="text-left white-text">
@@ -21,7 +21,7 @@ function BookingBanner() {
           </div>
           <div
             className="booking-now-btn wow fadeInUp"
-            data-wow-duration="1s"
+            data-wow-duration="0.5s"
             data-wow-delay="0.5s"
           >
             <button className="btn  btn-lg btn-info btn-block">

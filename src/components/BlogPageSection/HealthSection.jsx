@@ -21,11 +21,7 @@ function HealthSection() {
       <section className="latest-feed">
         <div className="container">
           <div className="row">
-            <div
-              className="col-md-3 col-lg-3 col-sm-6 col-xs-12 wow fadeInUp"
-              data-wow-duration=".5s"
-              data-wow-delay=".5s"
-            >
+            <div className="col-md-3 col-lg-3 col-sm-6 col-xs-12 ">
               <div className="feed-images">
                 <div className="inner-content">
                   <img src={img1} alt="" />
@@ -33,11 +29,7 @@ function HealthSection() {
                 </div>
               </div>
             </div>
-            <div
-              className="col-md-3 col-lg-3 col-sm-6 col-xs-12 wow fadeInUp"
-              data-wow-duration=".5s"
-              data-wow-delay=".5s"
-            >
+            <div className="col-md-3 col-lg-3 col-sm-6 col-xs-12 ">
               <div className="feed-images">
                 <div className="inner-content">
                   <img src={img2} alt="" />
@@ -45,11 +37,7 @@ function HealthSection() {
                 </div>
               </div>
             </div>
-            <div
-              className="col-md-3 col-lg-3 col-sm-6 col-xs-12 wow fadeInUp"
-              data-wow-duration=".5s"
-              data-wow-delay=".5s"
-            >
+            <div className="col-md-3 col-lg-3 col-sm-6 col-xs-12 ">
               <div className="feed-images">
                 <div className="inner-content">
                   <img src={img3} alt="" />
@@ -57,11 +45,7 @@ function HealthSection() {
                 </div>
               </div>
             </div>
-            <div
-              className="col-md-3 col-lg-3 col-sm-6 col-xs-12 wow fadeInUp"
-              data-wow-duration=".5s"
-              data-wow-delay=".5s"
-            >
+            <div className="col-md-3 col-lg-3 col-sm-6 col-xs-12 ">
               <div className="feed-images">
                 <div className="inner-content">
                   <img src={img4} alt="" />

@@ -25,7 +25,7 @@ function ContentSection() {
             <div
               className="col-md-9 col-sm-12 col-lg-9 col-xs-12 power-zone-innercontent relative wow fadeInRight"
               data-wow-duration=".5s"
-              data-wow-delay=".6s"
+              data-wow-delay=".5s"
             >
               <h2>GETTING STARTED</h2>
               <p>

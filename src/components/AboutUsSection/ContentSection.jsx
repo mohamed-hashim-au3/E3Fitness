@@ -91,11 +91,7 @@ function ContentSection() {
             </div>
           </div>
 
-          <div
-            className="row text-center sports-image wow fadeInUp"
-            data-wow-duration="0.5s"
-            data-wow-delay="0.6s"
-          >
+          <div className="row text-center sports-image">
             <div className="col-md-12 col-lg-12 col-xs-12">
               <img src={imgSports} className="img-fluid" alt="" />
             </div>

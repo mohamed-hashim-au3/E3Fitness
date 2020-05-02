@@ -34,7 +34,7 @@ function MainGridSection() {
             <div
               className="col-md-3 col-sm-6 col-lg-3 col-xs-12 text-center wow fadeInUp"
               data-wow-duration=".5s"
-              data-wow-delay=".7s"
+              data-wow-delay=".5s"
             >
               <img src={Team2} alt="" className="img-fluid" />
               <h3 className="blue-text">Robert Henz</h3>
@@ -43,7 +43,7 @@ function MainGridSection() {
             <div
               className="col-md-3 col-sm-6 col-lg-3 col-xs-12 text-center wow fadeInUp"
               data-wow-duration=".5s"
-              data-wow-delay=".9s"
+              data-wow-delay=".5s"
             >
               <img src={Team3} alt="" className="img-fluid" />
               <h3 className="blue-text">Robert Henz</h3>
@@ -52,7 +52,7 @@ function MainGridSection() {
             <div
               className="col-md-3 col-sm-6 col-lg-3 col-xs-12 text-center wow fadeInUp"
               data-wow-duration=".5s"
-              data-wow-delay="1.1s"
+              data-wow-delay="0.5s"
             >
               <img src={Team4} alt="" className="img-fluid" />
               <h3 className="blue-text">Robert Henz</h3>
@@ -64,7 +64,7 @@ function MainGridSection() {
             <div
               className="col-md-3 col-sm-6 col-lg-3 col-xs-12 text-center wow fadeInUp"
               data-wow-duration=".5s"
-              data-wow-delay="1.1s"
+              data-wow-delay="0.5s"
             >
               <img src={Team5} alt="" className="img-fluid" />
               <h3 className="blue-text">Robert Henz</h3>
@@ -73,7 +73,7 @@ function MainGridSection() {
             <div
               className="col-md-3 col-sm-6 col-lg-3 col-xs-12 text-center wow fadeInUp"
               data-wow-duration=".5s"
-              data-wow-delay="1.2s"
+              data-wow-delay="0.5s"
             >
               <img src={Team6} alt="" className="img-fluid" />
               <h3 className="blue-text">Robert Henz</h3>
@@ -82,7 +82,7 @@ function MainGridSection() {
             <div
               className="col-md-3 col-sm-6 col-lg-3 col-xs-12 text-center wow fadeInUp"
               data-wow-duration=".5s"
-              data-wow-delay="1.3s"
+              data-wow-delay="0.5s"
             >
               <img src={Team7} alt="" className="img-fluid" />
               <h3 className="blue-text">Robert Henz</h3>
@@ -91,7 +91,7 @@ function MainGridSection() {
             <div
               className="col-md-3 col-sm-6 col-lg-3 col-xs-12 text-center wow fadeInUp"
               data-wow-duration=".5s"
-              data-wow-delay="1.4s"
+              data-wow-delay="0.5s"
             >
               <img src={Team8} alt="" className="img-fluid" />
               <h3 className="blue-text">Robert Henz</h3>
@@ -103,7 +103,7 @@ function MainGridSection() {
             <div
               className="col-md-3 col-sm-6 col-lg-3 col-xs-12 text-center wow fadeInUp"
               data-wow-duration=".5s"
-              data-wow-delay="1.5s"
+              data-wow-delay="0.5s"
             >
               <img src={Team9} alt="" className="img-fluid" />
               <h3 className="blue-text">Robert Henz</h3>
@@ -112,7 +112,7 @@ function MainGridSection() {
             <div
               className="col-md-3 col-sm-6 col-lg-3 col-xs-12 text-center wow fadeInUp"
               data-wow-duration=".5s"
-              data-wow-delay="1.6s"
+              data-wow-delay="0.6s"
             >
               <img src={Team10} alt="" className="img-fluid" />
               <h3 className="blue-text">Robert Henz</h3>
@@ -121,7 +121,7 @@ function MainGridSection() {
             <div
               className="col-md-3 col-sm-6 col-lg-3 col-xs-12 text-center wow fadeInUp"
               data-wow-duration=".5s"
-              data-wow-delay="1.7s"
+              data-wow-delay=".7s"
             >
               <img src={Team11} alt="" className="img-fluid" />
               <h3 className="blue-text">Robert Henz</h3>
@@ -130,7 +130,7 @@ function MainGridSection() {
             <div
               className="col-md-3 col-sm-6 col-lg-3 col-xs-12 text-center wow fadeInUp"
               data-wow-duration=".5s"
-              data-wow-delay="1.8s"
+              data-wow-delay=".8s"
             >
               <img src={Team12} alt="" className="img-fluid" />
               <h3 className="blue-text">Robert Henz</h3>

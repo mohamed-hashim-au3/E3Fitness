@@ -7,8 +7,8 @@ function BookingClassSection() {
         <div class="booking-flex-container">
           <div
             class="booking-head-text wow fadeInUp"
-            data-wow-duration="1.6s"
-            data-wow-delay="1s"
+            data-wow-duration="0.5s"
+            data-wow-delay="0.2s"
           >
             <h1 class="text-left white-text">
               Get in the best shape of your life, with me at your side
@@ -16,8 +16,8 @@ function BookingClassSection() {
           </div>
           <div
             class="booking-now-btn wow fadeInUp"
-            data-wow-duration="1.6s"
-            data-wow-delay="1.2s"
+            data-wow-duration="0.5s"
+            data-wow-delay="0.2s"
           >
             <button class="btn  btn-lg btn-info btn-block">BOOK A CLASS</button>
           </div>
