@@ -7,7 +7,7 @@ function ContentSection() {
         <div className="container-fluid">
           <h1
             className="heading-text-blue wow fadeInUp"
-            data-wow-duration="1s"
+            data-wow-duration="0.5s"
             data-wow-delay="0.5s"
           >
             performance solutions
@@ -15,14 +15,14 @@ function ContentSection() {
           <div className="row inner-content">
             <div
               className="col-md-5 col-lg-5 col-sm-5 col-xs-12 wow fadeInLeft"
-              data-wow-duration="1s"
+              data-wow-duration="0.5s"
               data-wow-delay="0.6s"
             >
               <h1 className="white-text">Who We Are</h1>
             </div>
             <div
               className="col-md-7 col-sm-7 col-lg-7 col-xs-12 wow fadeInRight"
-              data-wow-duration="1s"
+              data-wow-duration="0.5s"
               data-wow-delay="0.6s"
             >
               <p>
@@ -41,14 +41,14 @@ function ContentSection() {
           <div className="row inner-content">
             <div
               className="col-md-5 col-lg-5 col-sm-5 col-xs-12 wow fadeInLeft"
-              data-wow-duration="1s"
+              data-wow-duration="0.5s"
               data-wow-delay="0.6s"
             >
               <h1 className="white-text">Why We Started</h1>
             </div>
             <div
               className="col-md-7 col-sm-7 col-lg-7 col-xs-12 wow fadeInRight"
-              data-wow-duration="1s"
+              data-wow-duration="0.5s"
               data-wow-delay="0.6s"
             >
               <p>
@@ -67,14 +67,14 @@ function ContentSection() {
           <div className="row inner-content">
             <div
               className="col-md-5 col-lg-5 col-sm-5 col-xs-12 wow fadeInLeft"
-              data-wow-duration="1s"
+              data-wow-duration="0.5s"
               data-wow-delay="0.6s"
             >
               <h1 className="white-text">Why We Started</h1>
             </div>
             <div
               className="col-md-7 col-sm-7 col-lg-7 col-xs-12 wow fadeInRight"
-              data-wow-duration="1s"
+              data-wow-duration="0.5s"
               data-wow-delay="0.6s"
             >
               <p>
@@ -93,7 +93,7 @@ function ContentSection() {
 
           <div
             className="row text-center sports-image wow fadeInUp"
-            data-wow-duration="1s"
+            data-wow-duration="0.5s"
             data-wow-delay="0.6s"
           >
             <div className="col-md-12 col-lg-12 col-xs-12">

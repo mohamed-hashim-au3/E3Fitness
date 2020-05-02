@@ -34,9 +34,7 @@ function Header() {
                   </li>
                   <li>
                     <div className="m-dropdown">
-                      <Link className="m-dropbtn" to="/">
-                        CLASSES
-                      </Link>
+                      <Link className="m-dropbtn">CLASSES</Link>
                       <div className="m-dropdown-content">
                         <Link
                           to="/classes/power_class"
@@ -44,14 +42,14 @@ function Header() {
                         >
                           POWER
                         </Link>
-                        <div class="dropdown-divider"></div>
+                        <div className="dropdown-divider"></div>
                         <Link
                           to="/classes/senior_class"
                           className="mdropdown-link"
                         >
                           SENIOR
                         </Link>
-                        <div class="dropdown-divider"></div>
+                        <div className="dropdown-divider"></div>
                         <Link
                           to="/classes/youth_class"
                           className="mdropdown-link"
@@ -62,7 +60,7 @@ function Header() {
                     </div>
                   </li>
                   <li>
-                    <Link to="/blog">BLOG</Link>
+                    <Link to="/blogs">BLOG</Link>
                   </li>
                   <li>
                     <Link to="/trainers">TRAINERS</Link>

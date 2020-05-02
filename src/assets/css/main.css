@@ -462,6 +462,7 @@ section#about-booking-section {
   left: 5rem;
   font-size: 5rem;
   font-weight: 700;
+  font-family: "Xirod", sans-serif;
 }
 .meet-team-section {
   background-image: url("../images/meet-team-bg.jpg");
@@ -581,9 +582,14 @@ section.power-zone-content {
   background-color: #1f1f1f;
 }
 
-.power-zone-content h1.blue-text {
+.power-zone-content a.blue-text {
   font-size: 3rem;
   font-weight: 600;
+}
+.power-zone-content a.blue-text:hover {
+  font-size: 3rem;
+  font-weight: 600;
+  color: white !important;
 }
 .power-zone-content p {
   color: #fff;
@@ -643,6 +649,245 @@ section.power-zone-content .row {
   font-family: "Xirod", sans-serif !important;
 }
 /*YOUTH Class Page  css Ends */
+/*POWER_ZONE CLASS page css starts */
+.powerZone-main-section {
+  background-image: url(../images/power-inner-1.jpg);
+  background-attachment: fixed;
+  height: 80vh;
+
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.powerZone-main-heading {
+  padding: 0rem 2rem;
+}
+.powerZone-main-heading h1.blue-text {
+  font-size: 4rem;
+  font-weight: 700;
+  position: absolute;
+  top: -6rem;
+  font-family: "Xirod", sans-serif !important;
+}
+/*POWER_ZONE Class Page  css Ends */
+
+/*POWER_HIT CLASS page css starts */
+.powerHit-main-section {
+  background-image: url(../images/power-inner-2.jpg);
+  background-attachment: fixed;
+  height: 80vh;
+
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.powerHit-main-heading {
+  padding: 0rem 2rem;
+}
+.powerHit-main-heading h1.blue-text {
+  font-size: 4rem;
+  font-weight: 700;
+  position: absolute;
+  top: -6rem;
+  font-family: "Xirod", sans-serif !important;
+}
+/*POWER_HIT Class Page  css Ends */
+/*POWER_CARDIO CLASS page css starts */
+.powerCardio-main-section {
+  background-image: url(../images/power-inner-3.jpg);
+  background-attachment: fixed;
+  height: 80vh;
+
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.powerCardio-main-heading {
+  padding: 0rem 2rem;
+}
+.powerCardio-main-heading h1.blue-text {
+  font-size: 4rem;
+  font-weight: 700;
+  position: absolute;
+  top: -6rem;
+  font-family: "Xirod", sans-serif !important;
+}
+/*POWER_CARDIO Class Page  css Ends */
+
+/*POWER_DANCE CLASS page css starts */
+.powerDance-main-section {
+  background-image: url(../images/power-inner-4.jpg);
+  background-attachment: fixed;
+  height: 80vh;
+
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.powerDance-main-heading {
+  padding: 0rem 2rem;
+}
+.powerDance-main-heading h1.blue-text {
+  font-size: 4rem;
+  font-weight: 700;
+  position: absolute;
+  top: -6rem;
+  font-family: "Xirod", sans-serif !important;
+}
+/*POWER_DANCE Class Page  css Ends */
+
+/*POWER_ZEN CLASS page css starts */
+.powerZen-main-section {
+  background-image: url(../images/power-inner-5.jpg);
+  background-attachment: fixed;
+  height: 80vh;
+
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.powerZen-main-heading {
+  padding: 0rem 2rem;
+}
+.powerZen-main-heading h1.blue-text {
+  font-size: 4rem;
+  font-weight: 700;
+  position: absolute;
+  top: -6rem;
+  font-family: "Xirod", sans-serif !important;
+}
+/*POWER_ZEN Class Page  css Ends */
+
+/* BLOG PAGE CSS */
+/*blog-banner */
+.blog-main-section {
+  background-image: url("../images/banner-bg-blog.jpg");
+  background-attachment: fixed;
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+/*blog banner */
+
+/*latest news heading start */
+.blog-latest-news .heading-part h1.black-text {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 6rem;
+}
+section.blog-latest-news {
+  padding: 2rem;
+}
+.blog-latest-news .line-part {
+  border-top: 4px solid #454545;
+  align-items: center;
+}
+.blog-latest-news .heading-part h1.black-text:after {
+  height: 0.5rem;
+  display: block;
+  width: 100px;
+  background: #00a99d;
+  border-right: 1px white;
+  content: "";
+}
+.feed-images img {
+  width: 25rem;
+}
+.feed-images {
+  text-align: center;
+}
+.blog-latest-news .latest-feed .row {
+  padding: 1rem;
+}
+/*latest news heading end
+
+/*SHOP PAGE CSS */
+
+/* shop banner start */
+.shop-main-section {
+  background-image: url("../images/coco-water.jpg");
+  background-attachment: fixed;
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.shop-inner-content .flex-container a {
+  color: #484848;
+}
+.shop-inner-content .flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+.shop-inner-content {
+  padding: 5rem 2rem;
+}
+.shop-inner-content .flex-container .shop-product.text-center {
+  padding: 2rem 2rem;
+  text-align: center;
+}
+/* shop banner end */
+
+/* SHOP PAGE CSS*/
+
+/*food diet css start*/
+.food-diet-news .heading-part h1.black-text:after {
+  height: 0.5rem;
+  display: block;
+  width: 100px;
+  background: #00a99d;
+  border-right: 1px white;
+  content: "";
+}
+.food-diet-news.relative {
+  padding: 2rem;
+}
+.food-diet-news .heading-part h1.black-text {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 6rem;
+}
+/*food diet css end*/
+
+/*style gear section start*/
+.stylegear-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.stylegear-container .inner-part img {
+  width: auto;
+  padding: 0 1rem;
+}
+section.latest-feed h2.text-center {
+  padding: 3rem;
+  font-size: 2.5rem;
+}
+section.latest-feed p.text-center {
+  padding: 3rem;
+  font-size: 1.6rem;
+}
+.right-side-health-feed .flex-container {
+  display: flex;
+  padding: 2rem 0;
+}
+.right-side-health-feed img {
+  padding: 0 3rem;
+}
+/*style gear section end*/
+/* BLOG PAGE CSS */
 
 /*footer section start */
 ul.footer-links {
@@ -821,6 +1066,16 @@ section.footer-section {
 }
 /* MEdia Queries */
 
+@media (max-width: 1200px) {
+  /*shop Page start */
+  .shop-inner-content .flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  /*shop Page end */
+}
+
 @media (max-width: 1100px) {
   /*Power zone Page */
   .power-book-section section.booking-class {
@@ -840,6 +1095,21 @@ section.footer-section {
     text-transform: uppercase;
   }
   /*booking now new section*/
+
+  /*blog css */
+  .right-side-health-feed .flex-container {
+    display: flex;
+    padding: 2rem 0;
+    flex-wrap: wrap;
+  }
+  .right-side-health-feed img {
+    padding: 2rem 0rem;
+  }
+  .feed-images img {
+    width: 17rem;
+  }
+
+  /*blog css */
 }
 @media (max-width: 768px) {
   /*upcoming button section heading start*/
@@ -938,6 +1208,17 @@ section.footer-section {
     position: relative;
   }
   /* power main page end */
+
+  /* shop page */
+  .shop-inner-content .flex-container {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: nowrap;
+  }
+  .shop-product img {
+    width: 20rem !important;
+    height: 20rem !important;
+  }
 }
 
 /* @media (min-width: 768px) {
@@ -964,6 +1245,29 @@ section.footer-section {
     width: 100%;
     background-color: #0a0a0a57 !important;
   }
+
+  /*blog page css */
+  .feed-images p {
+    word-break: break-all !important;
+    word-wrap: break-word;
+  }
+  .feed-images img {
+    width: 100%;
+  }
+
+  /* blog page css */
+
+  /* shops pages */
+  .shop-inner-content .flex-container .shop-product.text-center {
+    padding: 0rem 0rem !important;
+    text-align: center;
+  }
+  .shop-inner-content .flex-container {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+  }
+
   /*footer-section*/
   ul.footer-links {
     display: flex;
@@ -992,5 +1296,11 @@ section.footer-section {
   .main-menuadjust.relative {
     width: 100%;
     background-color: #0a0a0a57 !important;
+  }
+  /* shop page */
+  .shop-inner-content .flex-container {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
   }
 }

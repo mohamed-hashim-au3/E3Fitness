@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import img1 from "../../assets/images/power-inner-1.jpg";
 import img2 from "../../assets/images/power-inner-2.jpg";
 import img3 from "../../assets/images/power-inner-3.jpg";
@@ -12,22 +13,23 @@ function CategorySection() {
           <div className="row">
             <div
               className="col-md-4 col-lg-4 col-sm-4 col-xs-12 p-0 wow fadeInUp"
-              data-wow-duration="1.6s"
+              data-wow-duration="0.5s"
               data-wow-delay=".5s"
             >
               <img src={img1} className="img-fluid" alt="" />
             </div>
             <div
               className="col-md-8 col-lg-8 col-sm-8 col-xs-12 wow fadeInUp"
-              data-wow-duration="1.6s"
+              data-wow-duration="0.5s"
               data-wow-delay=".6s"
             >
-              <h1
+              <Link
+                to="/classes/power_class/power_zone"
                 className="blue-text"
                 style={{ fontFamily: "Xirod,sans-serif" }}
               >
                 POWER ZONE
-              </h1>
+              </Link>
               <p>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                 diam nonummy nibh euismod tincidunt ut laoreet dolore magna
@@ -56,22 +58,23 @@ function CategorySection() {
           <div className="row">
             <div
               className="col-md-4 col-lg-4 col-sm-4 col-xs-12 p-0 wow fadeInUp"
-              data-wow-duration="1.6s"
+              data-wow-duration="0.5s"
               data-wow-delay=".7s"
             >
               <img src={img2} className="img-fluid" alt="" />
             </div>
             <div
               className="col-md-8 col-lg-8 col-sm-8 col-xs-12 wow fadeInUp"
-              data-wow-duration="1.6s"
-              data-wow-delay=".8s"
+              data-wow-duration="0.5s"
+              data-wow-delay="0.5s"
             >
-              <h1
+              <Link
+                to="/classes/power_class/power_hit"
                 className="blue-text"
                 style={{ fontFamily: "Xirod,sans-serif" }}
               >
                 POWER HIT
-              </h1>
+              </Link>
               <p>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                 diam nonummy nibh euismod tincidunt ut laoreet dolore magna
@@ -100,22 +103,23 @@ function CategorySection() {
           <div className="row">
             <div
               className="col-md-4 col-lg-4 col-sm-4 col-xs-12 p-0 wow fadeInUp"
-              data-wow-duration="1.6s"
-              data-wow-delay=".9s"
+              data-wow-duration="0.5s"
+              data-wow-delay="0.5s"
             >
               <img src={img3} className="img-fluid" alt="" />
             </div>
             <div
               className="col-md-8 col-lg-8 col-sm-8 col-xs-12 wow fadeInUp"
-              data-wow-duration="1.6s"
-              data-wow-delay="1s"
+              data-wow-duration="0.5s"
+              data-wow-delay="0.5s"
             >
-              <h1
+              <Link
+                to="/classes/power_class/power_cardio"
                 className="blue-text"
                 style={{ fontFamily: "Xirod,sans-serif" }}
               >
                 POWER CARDIO
-              </h1>
+              </Link>
               <p>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                 diam nonummy nibh euismod tincidunt ut laoreet dolore magna
@@ -144,22 +148,23 @@ function CategorySection() {
           <div className="row">
             <div
               className="col-md-4 col-lg-4 col-sm-4 col-xs-12 p-0 wow fadeInUp"
-              data-wow-duration="1.6s"
-              data-wow-delay="1.1s"
+              data-wow-duration="0.5s"
+              data-wow-delay="0.5s"
             >
               <img src={img4} className="img-fluid" alt="" />
             </div>
             <div
               className="col-md-8 col-lg-8 col-sm-8 col-xs-12 wow fadeInUp"
-              data-wow-duration="1.6s"
-              data-wow-delay="1.2s"
+              data-wow-duration="0.5s"
+              data-wow-delay="0.5s"
             >
-              <h1
+              <Link
+                to="/classes/power_class/power_dance"
                 className="blue-text"
                 style={{ fontFamily: "Xirod,sans-serif" }}
               >
                 POWER DANCE
-              </h1>
+              </Link>
               <p>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                 diam nonummy nibh euismod tincidunt ut laoreet dolore magna
@@ -188,22 +193,23 @@ function CategorySection() {
           <div className="row">
             <div
               className="col-md-4 col-lg-4 col-sm-4 col-xs-12 p-0 wow fadeInUp"
-              data-wow-duration="1.6s"
-              data-wow-delay="1.3s"
+              data-wow-duration="0.5s"
+              data-wow-delay="0.5s"
             >
               <img src={img5} className="img-fluid" alt="" />
             </div>
             <div
               className="col-md-8 col-lg-8 col-sm-8 col-xs-12 wow fadeInUp"
-              data-wow-duration="1.6s"
-              data-wow-delay="1.4s"
+              data-wow-duration="0.5s"
+              data-wow-delay="0.5s"
             >
-              <h1
+              <Link
+                to="/classes/power_class/power_zen"
                 className="blue-text"
                 style={{ fontFamily: "Xirod,sans-serif" }}
               >
                 POWER ZEN
-              </h1>
+              </Link>
               <p>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                 diam nonummy nibh euismod tincidunt ut laoreet dolore magna
