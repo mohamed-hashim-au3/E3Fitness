@@ -1,8 +1,8 @@
 import React from "react";
-import img1 from "../../assets/images/food-1.jpg";
-import img2 from "../../assets/images/food-2.jpg";
-import img3 from "../../assets/images/food-3.jpg";
-import img4 from "../../assets/images/food-4.jpg";
+import img1 from "../../assets/images/foodimg1.jpg";
+import img2 from "../../assets/images/foodimg2.jpg";
+import img3 from "../../assets/images/foodimg3.jpg";
+import img4 from "../../assets/images/foodimg4.jpg";
 
 function FoodSection() {
   return (

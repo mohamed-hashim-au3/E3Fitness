@@ -1,17 +1,12 @@
-import React, { useEffect } from "react";
+import React from "react";
 import img1 from "../../assets/images/up-one.jpg";
 import img2 from "../../assets/images/up-two.jpg";
 import img3 from "../../assets/images/up-three.jpg";
 import img4 from "../../assets/images/up-four.jpg";
 import img5 from "../../assets/images/up-five.jpg";
-import WOW from "wowjs";
+
 import { ReactComponent as Moree } from "../../assets/images/moree.svg";
 function UpcomingClassSection() {
-  useEffect(() => {
-    const wow = new WOW.WOW();
-    // ---- ^^ const wow = WOW(); maybe new syntax, check docs! ^^----
-    wow.init();
-  }, []);
   return (
     <>
       <div className="container-fluid main-banner">

@@ -1,14 +1,9 @@
-import React, { useEffect } from "react";
-import WOW from "wowjs";
+import React from "react";
+
 import img1 from "../../assets/images/blog-1.jpg";
 import img2 from "../../assets/images/blog-2.jpg";
 import img3 from "../../assets/images/blog-3.jpg";
 function LatestPostsSection() {
-  useEffect(() => {
-    const wow = new WOW.WOW();
-    // ---- ^^ const wow = WOW(); maybe new syntax, check docs! ^^----
-    wow.init();
-  }, []);
   return (
     <>
       <section className="latest-post relative ">

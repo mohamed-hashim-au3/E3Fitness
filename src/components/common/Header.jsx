@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import UserSignIn from "../UserSignIn";
 function Header() {
   return (
     <div>
@@ -14,9 +15,10 @@ function Header() {
           </ul>
 
           <span className="navbar-text signup-links pt-3">
-            <button className="mr-3 navbar-text signup-links">
+            {/* <button className="mr-3 navbar-text signup-links">
               log in/ sign up
-            </button>
+            </button> */}
+            <UserSignIn />
           </span>
         </div>
       </nav>

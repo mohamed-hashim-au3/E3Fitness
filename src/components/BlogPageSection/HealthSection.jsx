@@ -1,8 +1,8 @@
 import React from "react";
-import img1 from "../../assets/images/health-1.jpg";
-import img2 from "../../assets/images/health-2.jpg";
-import img3 from "../../assets/images/health-3.jpg";
-import img4 from "../../assets/images/health-4.jpg";
+import img1 from "../../assets/images/healthimg1.jpg";
+import img2 from "../../assets/images/healthimg2.jpg";
+import img3 from "../../assets/images/healthimg3.jpg";
+import img4 from "../../assets/images/healthimg4.jpg";
 function HealthSection() {
   return (
     <>

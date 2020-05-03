@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import WOW from "wowjs";
+import React from "react";
+
 import Team1 from "../../assets/images/team/team-1.jpg";
 import Team2 from "../../assets/images/team/team-2.jpg";
 import Team3 from "../../assets/images/team/team-3.jpg";
@@ -12,11 +12,8 @@ import Team9 from "../../assets/images/team/team-9.jpg";
 import Team10 from "../../assets/images/team/team-10.jpg";
 import Team11 from "../../assets/images/team/team-11.jpg";
 import Team12 from "../../assets/images/team/team-12.jpg";
+import TrainerDetailSection from "./TrainerDetailSection";
 function MainGridSection() {
-  useEffect(() => {
-    var wow = new WOW.WOW();
-    wow.init();
-  }, []);
   return (
     <>
       <section className="meet-team-members">
@@ -29,7 +26,7 @@ function MainGridSection() {
             >
               <img src={Team1} alt="" className="img-fluid" />
               <h3 className="blue-text">Robert Henz</h3>
-              <p className="text-white">Profile Details</p>
+              <TrainerDetailSection img={Team1} />
             </div>
             <div
               className="col-md-3 col-sm-6 col-lg-3 col-xs-12 text-center wow fadeInUp"
@@ -38,7 +35,7 @@ function MainGridSection() {
             >
               <img src={Team2} alt="" className="img-fluid" />
               <h3 className="blue-text">Robert Henz</h3>
-              <p className="text-white">Profile Details</p>
+              <TrainerDetailSection img={Team2} />
             </div>
             <div
               className="col-md-3 col-sm-6 col-lg-3 col-xs-12 text-center wow fadeInUp"
@@ -47,7 +44,7 @@ function MainGridSection() {
             >
               <img src={Team3} alt="" className="img-fluid" />
               <h3 className="blue-text">Robert Henz</h3>
-              <p className="text-white">Profile Details</p>
+              <TrainerDetailSection img={Team3} />
             </div>
             <div
               className="col-md-3 col-sm-6 col-lg-3 col-xs-12 text-center wow fadeInUp"
@@ -56,7 +53,7 @@ function MainGridSection() {
             >
               <img src={Team4} alt="" className="img-fluid" />
               <h3 className="blue-text">Robert Henz</h3>
-              <p className="text-white">Profile Details</p>
+              <TrainerDetailSection img={Team4} />
             </div>
           </div>
 
@@ -68,7 +65,7 @@ function MainGridSection() {
             >
               <img src={Team5} alt="" className="img-fluid" />
               <h3 className="blue-text">Robert Henz</h3>
-              <p className="text-white">Profile Details</p>
+              <TrainerDetailSection img={Team5} />
             </div>
             <div
               className="col-md-3 col-sm-6 col-lg-3 col-xs-12 text-center wow fadeInUp"
@@ -77,7 +74,7 @@ function MainGridSection() {
             >
               <img src={Team6} alt="" className="img-fluid" />
               <h3 className="blue-text">Robert Henz</h3>
-              <p className="text-white">Profile Details</p>
+              <TrainerDetailSection img={Team6} />
             </div>
             <div
               className="col-md-3 col-sm-6 col-lg-3 col-xs-12 text-center wow fadeInUp"
@@ -86,7 +83,7 @@ function MainGridSection() {
             >
               <img src={Team7} alt="" className="img-fluid" />
               <h3 className="blue-text">Robert Henz</h3>
-              <p className="text-white">Profile Details</p>
+              <TrainerDetailSection img={Team7} />
             </div>
             <div
               className="col-md-3 col-sm-6 col-lg-3 col-xs-12 text-center wow fadeInUp"
@@ -95,7 +92,7 @@ function MainGridSection() {
             >
               <img src={Team8} alt="" className="img-fluid" />
               <h3 className="blue-text">Robert Henz</h3>
-              <p className="text-white">Profile Details</p>
+              <TrainerDetailSection img={Team8} />
             </div>
           </div>
 
@@ -107,7 +104,7 @@ function MainGridSection() {
             >
               <img src={Team9} alt="" className="img-fluid" />
               <h3 className="blue-text">Robert Henz</h3>
-              <p className="text-white">Profile Details</p>
+              <TrainerDetailSection img={Team9} />
             </div>
             <div
               className="col-md-3 col-sm-6 col-lg-3 col-xs-12 text-center wow fadeInUp"
@@ -116,7 +113,7 @@ function MainGridSection() {
             >
               <img src={Team10} alt="" className="img-fluid" />
               <h3 className="blue-text">Robert Henz</h3>
-              <p className="text-white">Profile Details</p>
+              <TrainerDetailSection img={Team10} />
             </div>
             <div
               className="col-md-3 col-sm-6 col-lg-3 col-xs-12 text-center wow fadeInUp"
@@ -125,7 +122,7 @@ function MainGridSection() {
             >
               <img src={Team11} alt="" className="img-fluid" />
               <h3 className="blue-text">Robert Henz</h3>
-              <p className="text-white">Profile Details</p>
+              <TrainerDetailSection img={Team11} />
             </div>
             <div
               className="col-md-3 col-sm-6 col-lg-3 col-xs-12 text-center wow fadeInUp"
@@ -134,7 +131,7 @@ function MainGridSection() {
             >
               <img src={Team12} alt="" className="img-fluid" />
               <h3 className="blue-text">Robert Henz</h3>
-              <p className="text-white">Profile Details</p>
+              <TrainerDetailSection img={Team12} />
             </div>
           </div>
         </div>

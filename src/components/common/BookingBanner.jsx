@@ -1,11 +1,6 @@
-import React, { useEffect } from "react";
-import WOW from "wowjs";
+import React from "react";
+
 function BookingBanner() {
-  useEffect(() => {
-    const wow = new WOW.WOW();
-    // ---- ^^ const wow = WOW(); maybe new syntax, check docs! ^^----
-    wow.init();
-  }, []);
   return (
     <>
       <section className="booking-class-new">

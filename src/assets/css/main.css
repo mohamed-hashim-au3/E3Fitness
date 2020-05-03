@@ -166,7 +166,7 @@ ul.main-menu-links-mobile a {
   width: 100%;
   background-color: #0a0a0a57;
   position: absolute;
-  z-index: 9999999 !important;
+  z-index: 1 !important;
   height: 40px;
 }
 
@@ -782,10 +782,17 @@ section.power-zone-content .row {
 /*blog banner */
 
 /*latest news heading start */
+.black-text {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 6rem;
+  font-family: "Xirod", sans-serif;
+}
 .blog-latest-news .heading-part h1.black-text {
   font-size: 3rem;
   font-weight: 700;
   line-height: 6rem;
+  font-family: "Xirod", sans-serif;
 }
 section.blog-latest-news {
   padding: 2rem;
@@ -888,6 +895,356 @@ section.latest-feed p.text-center {
 }
 /*style gear section end*/
 /* BLOG PAGE CSS */
+/*Sign in css start */
+.btn-primary {
+  color: #fff;
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+  font-size: 2rem;
+}
+div#signinmodal {
+  position: relative;
+  z-index: 100 !important;
+}
+div#signinmodal .modal-content {
+  background-color: black;
+  padding: 2rem;
+  margin: 0 auto;
+  width: 70%;
+}
+h1.sign-heading {
+  color: #00a99d;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 0.5rem;
+  font-family: "Xirod", sans-serif;
+}
+.sign-in {
+  font-size: 1.5rem;
+  padding: 3rem;
+  border-radius: 0;
+  background-color: #4d4d4d;
+  border: none;
+}
+div#signinmodal p.text-white {
+  padding-left: 1rem;
+  font-size: 2rem;
+}
+div#signinmodal .form-group {
+  margin-bottom: 2rem;
+}
+div#signinmodal .form-group .form-control {
+  font-size: 2rem !important;
+  background-color: transparent;
+  border: 1px solid #4d4d4d;
+}
+::placeholder {
+  color: #fff !important;
+  opacity: 1;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+div#signinmodal .form-control:focus {
+  color: #ffffff;
+  background-color: #4d4d4d;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.sing-in-btn {
+  background-color: #00a99d;
+  border: none;
+  border-radius: 0;
+  font-size: 2rem !important;
+}
+.sign-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.sign-bottom label.form-check-label {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.sign-bottom input#exampleCheck1 {
+  align-self: flex-end;
+  right: 10rem;
+  height: 1.6rem;
+  width: 1.5rem;
+}
+.sign-bottom p.text-right {
+  color: #fff;
+  font-size: 1.4rem;
+}
+.sign-bottom a {
+  color: #fff;
+}
+.fb-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2em 0;
+}
+.fb-section img.img-fluid {
+  width: 2.5rem;
+}
+.fb-section p {
+  color: #fff;
+  margin-bottom: 0;
+  font-size: 1.4rem;
+}
+.sign-bottom .form-check {
+  position: relative;
+  display: block;
+  padding-left: 2.25rem;
+}
+.sing-in-btn:hover {
+  background-color: #068b9c;
+}
+/* sign in css end */
+
+/* sign up css start */
+div#signupmodal .modal-content {
+  background-color: #151515de;
+  padding: 2rem;
+  margin: 0 auto;
+  width: 90%;
+  min-height: 70vh;
+}
+h1.signup-heading {
+  color: #00a99d;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 1rem;
+  font-family: "Xirod", sans-serif;
+}
+small.email-helps {
+  color: #fff;
+}
+.premium-btn {
+  float: right;
+  cursor: pointer;
+}
+.captcha {
+  text-align: center;
+}
+small.info-term {
+  color: #fff;
+}
+/* sign up css end */
+
+/*account seclection start */
+div#accountmodal .modal-content {
+  background-color: #151515de;
+  padding: 2rem;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 70vh;
+}
+.account-selection thead {
+  background-color: #00a99d;
+  border: 0px;
+}
+.account-selection thead th {
+  border: 1px solid #000000;
+  padding: 0.8rem;
+  text-align: center;
+  color: #000;
+}
+.account-selection td {
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.account-selection th.inner-head {
+  background-color: #808080;
+}
+.account-selection tr.grey {
+  background-color: #666666;
+}
+tr.dark-grey {
+  background-color: #333333;
+}
+.account-selection .fa {
+  font-size: 3rem;
+  color: #00a99d;
+}
+.account-selection tr.blue-bg {
+  background-color: #00a99d;
+}
+.account-selection tr.blue-bg td {
+  color: #000;
+  border-left: 1px solid #000;
+}
+
+/*team modal css  start*/
+div#teammodal .modal-content {
+  background-color: #151515de;
+  padding: 2rem;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+.team-detail-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.team-detail-container h1.blue-text {
+  padding: 0 2rem;
+}
+.team-detail-container .team-info-content small {
+  color: #fff;
+  font-size: 1.3rem;
+}
+.team-info img.img-fluid {
+  height: 70%;
+  width: 160rem;
+}
+.team-info-content p {
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 0 2rem;
+}
+.team-detail-container2 {
+  display: flex;
+  justify-content: start;
+  padding: 1rem 0;
+}
+.team-detail-container2 .line {
+  border-bottom: 3px solid #fff;
+  height: 1.2rem;
+  width: 80%;
+  margin: 0 auto;
+}
+.team-detail-container3 {
+  display: flex;
+  justify-content: start;
+}
+.img-info img.img-fluid.team-img {
+  width: 20rem !important;
+  margin-bottom: 10px;
+}
+
+.img-info img.img-fluid.item-add {
+  width: 100%;
+  margin: 2rem 1em;
+  cursor: pointer;
+}
+.team-detail-container3 .img-info {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+/* 
+//Shopping Page Modal */
+
+div#productmodal .modal-content {
+  background-color: #fff;
+  padding: 2rem;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 50vh;
+}
+.product-details-conatiner {
+  display: flex;
+  justify-content: space-around;
+}
+.inner-img-details img.img-fluid {
+  width: 13rem;
+}
+h2.price-tag {
+  color: #770606;
+  font-size: 2.5rem;
+}
+.review-section {
+  display: flex;
+  justify-content: space-between;
+}
+.review-section a {
+  color: #00a99d;
+}
+.custom-select {
+  font-size: 1.5rem;
+}
+.quantity {
+  display: flex;
+  justify-content: space-between;
+}
+.quantity a {
+  border: 1px solid #454545;
+  padding: 0.2rem 1.5rem;
+  font-size: 2rem;
+  color: #000;
+  font-weight: 700;
+}
+.number {
+  border: 1px solid #454545;
+  padding: 0.2rem 2.5rem;
+  font-size: 2rem;
+  color: #000;
+}
+.quantity .sing-in-btn {
+  font-size: 1.5rem;
+}
+.product-first {
+  flex: 2.5;
+}
+.product-second {
+  flex: 2;
+}
+ul.iner-product {
+  list-style: disc;
+  padding: 1rem 2rem;
+}
+.product-second h3 {
+  font-weight: 600;
+}
+.product-btn {
+  flex: 1.5;
+  margin-left: 2rem;
+}
+
+/* chooseplan Modal */
+.choose-plan-heading {
+  font-size: 2.5rem;
+  font-family: "Xirod", sans-serif;
+  color: #fff;
+  margin-left: 0;
+}
+.choose-plan-heading .heading-e3 {
+  font-size: 3rem;
+  color: var(--color-primary) !important;
+}
+.choose-plan-container table {
+  border-collapse: separate;
+  border-spacing: 5px;
+}
+.choose-plan-container table thead tr th:not(:first-child) {
+  padding: 0.5em 1em;
+  background-color: var(--color-primary) !important;
+  text-align: center;
+}
+.choose-plan-table tbody tr td:not(:first-child) {
+  font: 1.4rem;
+  color: var(--color-primary);
+  text-align: center;
+  padding: 0em 0.3em !important ;
+}
+.choose-plan-table tbody tr td {
+  font-size: 1.5rem;
+  padding: 0.5em 1em;
+}
+.choose-plan-container table tbody tr:last-child td:not(:first-child) {
+  background-color: var(--color-primary);
+  color: #fff;
+  font-size: 1.3rem;
+  padding: 0em 0.5em !important ;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  cursor: pointer;
+}
 
 /*footer section start */
 ul.footer-links {
@@ -954,49 +1311,42 @@ section.footer-section {
     flex-basis: auto;
     -ms-flex-positive: 1;
     flex-grow: 1;
-    max-width: 100%;
+    width: 100%;
     padding-right: 0px !important;
     padding-left: 0px !important;
+  }
+  .col-sm .img-fluid {
+    width: 100% !important;
+    min-width: 100% !important;
   }
   .upcoming-class h1.light-blue {
     width: 100%;
     text-align: center;
   }
-
-  /*upcoming section*/
-
-  /*booking section */
-  /* section.booking-class {
-    background-image: url("../images/booking-class-bg.jpg");
-    margin: 6rem 0 10rem 0;
-    height: 10rem;
+  /* //modal */
+  .team-detail-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
-  a.blue-bg-text {
-    background-color: var(--color-primary);
-    padding: 1rem 3rem;
-    position: absolute;
-    top: 25%;
-    font-size: 2rem;
-    left: 5rem;
+  .team-info img.img-fluid {
+    width: 30rem;
+    align-self: center !important;
+    text-align: -webkit-center;
   }
-  .booking-class h1.white-text {
-    color: #fff;
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    padding: 1em 1em;
-  } */
-  /*booking section*/
+  .team-detail-container2 .line {
+    border-bottom: 3px solid #fff;
+    height: 1.2rem;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  /* //shopping modal */
+  .quantity .sing-in-btn {
+    font-size: 1rem;
+    padding: 0;
+  }
 }
-
-/* @media (min-width: 768px) {
-  .logo-link-mobile {
-    display: none !important;
-  }
-  ul.main-menu-links-mobile {
-    padding-left: 0rem;
-    display: none;
-  }
-} */
 @media (max-width: 580px) {
   html {
     font-size: 50%;
@@ -1007,7 +1357,7 @@ section.footer-section {
     width: 100%;
     background-color: #0a0a0a57;
     position: absolute;
-    z-index: 9999999 !important;
+    z-index: 1;
     height: 5rem;
   }
   .main-menu {
@@ -1048,6 +1398,18 @@ section.footer-section {
     margin: 6rem 0 10rem 0;
     height: 20rem;
   } */
+
+  /* shopping Modal */
+  .inner-img-details {
+    flex-wrap: wrap;
+  }
+  .product-details-conatiner {
+    flex-wrap: wrap;
+  }
+  .product-first,
+  .product-second {
+    flex: auto !important;
+  }
 
   /*footer-section*/
   ul.footer-links {
@@ -1267,7 +1629,17 @@ section.footer-section {
     /* justify-content: space-between; */
     flex-wrap: wrap;
   }
+  /* modal section */
 
+  div#accountmodal .modal-dialog {
+    max-width: 900px;
+    margin: 1.75rem auto;
+  }
+
+  div#teammodal .modal-dialog {
+    max-width: 75rem;
+    margin: 1.75rem auto;
+  }
   /*footer-section*/
   ul.footer-links {
     display: flex;
@@ -1302,5 +1674,12 @@ section.footer-section {
     display: flex;
     /* justify-content: space-between; */
     flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 576px) {
+  div#productmodal .modal-dialog {
+    max-width: 85rem;
+    margin: 1.75rem auto;
   }
 }
