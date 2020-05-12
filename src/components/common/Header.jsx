@@ -1,7 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import UserSignIn from "../UserSignIn";
-function Header() {
+import InstructorAuth from "../InstructorAuth";
+import img1 from "../../assets/images/blog-1.jpg";
+import img2 from "../../assets/images/blog-2.jpg";
+function Header(props) {
+  React.useEffect(props => {
+    console.log(props);
+  }, []);
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light top-navigation">
@@ -14,11 +20,69 @@ function Header() {
             </li>
           </ul>
 
-          <span className="navbar-text signup-links pt-3">
-            {/* <button className="mr-3 navbar-text signup-links">
-              log in/ sign up
-            </button> */}
-            <UserSignIn />
+          <span className="navbar-text pt-3">
+            {props.login === true ? (
+              <>
+                <div className="button-dropdown">
+                  <button className="mr-3 navbar-text account-links">
+                    MY CLASSES
+                  </button>
+                  <div className="button-dropdown-content">
+                    <div className="content-wrapper">
+                      <img src={img1} className="btn-dpd-img" />
+                      <div style={{ display: "flex", flexDirection: "column" }}>
+                        <div className="btn-dpd-info">Power CORE</div>
+                        <div
+                          className="btn-dpd-date"
+                          style={{ fontSize: "1rem", color: "white" }}
+                        >
+                          20/05/20{" "}
+                        </div>
+                      </div>
+                    </div>
+                    <div className="content-wrapper">
+                      <img src={img2} className="btn-dpd-img" />
+                      <div style={{ display: "flex", flexDirection: "column" }}>
+                        <div className="btn-dpd-info">Power ZEN</div>
+                        <div
+                          className="btn-dpd-date"
+                          style={{ fontSize: "1rem", color: "white" }}
+                        >
+                          20/05/20{" "}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="btn-dropdown-acc">
+                  <button className="mr-3 navbar-text account-links">
+                    MY ACCOUNT
+                  </button>
+                  <div className="btn-dpd-acc-content">
+                    <div className="btn-acc-title">
+                      <span style={{ color: "#fff" }}>E3 </span>FITNESS
+                    </div>
+                    <div
+                      className="btn-acc-name"
+                      style={{ color: "#00a99d", fontSize: "1.5rem" }}
+                    >
+                      Malek
+                    </div>
+                    <div>
+                      <div className="btn-acc-info">Account</div>
+                      {/* <div className="btn-acc-info">Trainer Account</div> */}
+                      <InstructorAuth />
+                      <div className="btn-acc-info">Help Center</div>
+                      <div className="btn-acc-info" onClick={props.handleLogin}>
+                        Logout
+                      </div>
+                    </div>
+                  </div>
+                </div>{" "}
+              </>
+            ) : (
+              <UserSignIn />
+            )}
           </span>
         </div>
       </nav>

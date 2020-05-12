@@ -1,6 +1,9 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
+import InstructorAuth from "../InstructorAuth";
+import BecameInstructor from "../InstructorAuthSection/BecameInstructor";
+import InstructorRegister from "../InstructorAuthSection/InstructorRegister";
 function Footer() {
   return (
     <>
@@ -22,7 +25,7 @@ function Footer() {
                   <a href="/">Jobs</a>
                 </li>
                 <li>
-                  <a href="/">Become a Member</a>
+                  <InstructorRegister />
                 </li>
                 <li>
                   <a href="/">

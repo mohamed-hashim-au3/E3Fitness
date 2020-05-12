@@ -2,7 +2,7 @@ import React from "react";
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import ScrollTop from "./ScrollTop";
-import HomePage from "./components/HomePage";
+import HomePage from "./containers/Home";
 import AboutUs from "./containers/AboutsUs";
 import Trainers from "./containers/TrainersPage";
 import PowerClass from "./containers/PowerClass";
@@ -15,6 +15,7 @@ import PowerCardio from "./containers/PowerCardio";
 import PowerZen from "./containers/PowerZen";
 import BlogPage from "./containers/BlogPage";
 import ShopPage from "./containers/ShopPage";
+import CreateCourse1 from "./containers/InstructorAccountsSection/InstructorCreateCourse1";
 // import NoMatch from "./components/NoMatch";
 
 const Routes = () => {
@@ -46,6 +47,7 @@ const Routes = () => {
       <Route exact path="/classes/power_class/power_zen" component={PowerZen} />
       <Route exact path="/blogs" component={BlogPage} />
       <Route exact path="/shop" component={ShopPage} />
+      <Route exact path="/user/createcourse/1" component={CreateCourse1} />
     </Router>
   );
 };

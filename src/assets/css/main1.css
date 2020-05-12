@@ -1,0 +1,1268 @@
+@font-face {
+  font-family: "MyriadPro";
+  src: url("../fonts/MyriadPro-Regular/MyriadPro-Regular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/MyriadPro-Regular//MyriadPro-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts//MyriadPro-Regular/MyriadPro-Regular.otf")
+      format("opentype"),
+    /* Open Type Font */
+      url("../fonts//MyriadPro-Regular/MyriadPro-Regular.svg") format("svg"),
+    /* Legacy iOS */ url("../fonts//MyriadPro-Regular/MyriadPro-Regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts//MyriadPro-Regular/MyriadPro-Regular.woff") format("woff"),
+    /* Modern Browsers */
+      url("../fonts/MyriadPro-Regular/MyriadPro-Regular.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Xirod";
+  src: url("../fonts/Xirod/xirod.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Xirod/xirod.eot#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts//Xirod/xirod.otf") format("opentype"),
+    /* Open Type Font */ url("../fonts//Xirod/xirod.svg") format("svg"),
+    /* Legacy iOS */ url("../fonts//Xirod/xirod.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/Xirod//xirod.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/Xirod//xirod.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --color-primary: #00a99d;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html body {
+  margin: 0;
+
+  font-size: 1.6rem;
+  font-family: "MyriadPro", "Xirod", sans-serif;
+}
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+
+/*sidebar css starts here*/
+.left-content {
+  background-color: #000000;
+  padding: 0;
+  height: 100vh;
+}
+.left-content .profile-section {
+  padding: 4em 2em 2em;
+}
+.left-content .profile-section h1 {
+  color: #01a7a0;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.left-content .profile-section span {
+  color: #fff;
+}
+.left-content .profile-section img.img-fluid {
+  border-radius: 50%;
+  height: 9rem;
+  border: 2px solid #fff;
+  width: 6em;
+}
+.left-content .profile-section p {
+  color: #fff;
+  font-size: 2rem;
+}
+.form-control {
+  display: block;
+  width: 65%;
+}
+
+ul.side-link-desktop a {
+  color: #fff;
+  font-size: 1.7rem;
+  line-height: 5rem;
+}
+ul.side-link-desktop a .fa {
+  padding-right: 0.8em;
+}
+ul.side-link-desktop a img {
+  padding: 0 0.5em;
+}
+ul.side-link-desktop li {
+  padding: 0 0 0 3em;
+}
+ul.side-link-desktop {
+  padding: 0;
+}
+
+ul.side-link-desktop li:hover {
+  background-color: #3a3a3a;
+  cursor: pointer;
+  border-left: 3px solid #01a796;
+}
+/*sidebar css ends here*/
+
+/*right-content start here*/
+::-webkit-scrollbar {
+  width: 20px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f3f3f3;
+  border-top-left-radius: 0.3em;
+  border-top-right-radius: 0.3em;
+  border-bottom-left-radius: 0.3em;
+  border-bottom-right-radius: 0.3em;
+}
+
+.right-side-content {
+  padding: 1em 0 0 1em;
+}
+.right-side-content .header-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2em 2em 0em;
+  border-bottom: 2px solid #f5f0f0;
+}
+.right-side-content .header-content h2 {
+  font-size: 2.2rem;
+}
+.course-title-form input {
+  padding: 1.4em 0.6em;
+  font-size: 1.5rem;
+}
+.course-title-form .form-group {
+  margin-bottom: 3rem;
+}
+.course-title-form {
+  padding: 2em 1em;
+}
+.course-title-form select {
+  height: 4.5rem;
+  font-size: 1.8rem;
+}
+.course-title-form label {
+  color: #c6c6c6;
+  font-size: 1.8rem;
+}
+button.btn.btn-info.continue-btn.btn-large {
+  font-size: 1.8rem;
+  border: 0em;
+  padding: 0.5em 2em;
+  float: right;
+  margin: 3em 1em 0 0;
+}
+section.course-section {
+  overflow-y: hidden;
+  height: 100%;
+}
+/*right-content end here*/
+
+/*plan your course start*/
+.plan-course .plan-course-head {
+  padding: 0.5em 0.8em;
+}
+.Pricing-section h2.plan-course-head {
+  padding: 0.5em 0.6em;
+  border-left: 2px solid #17a2b8;
+}
+.price-select {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+select#price_selcet_2 {
+  width: 30rem !important;
+  width: 100%;
+}
+select#price_selcet_1 {
+  width: 10em !important;
+  margin: 0 0.5em;
+}
+.Pricing-section form.course-title-form {
+  height: 85vh;
+  overflow-y: scroll;
+}
+.Pricing-section small {
+  color: #a5a4a4;
+  font-size: 1.6rem;
+}
+label.label-top {
+  display: flex;
+  width: 65%;
+  justify-content: space-between;
+  font-size: 1.8rem;
+}
+.video-icon .inner-icon-text svg {
+  width: 20%;
+  opacity: 0.1;
+}
+.video-icon.relative .text-center.inner-icon-text {
+  padding: 5em 0em;
+  border: 2px dashed #dad8d8;
+  margin: 10% 30%;
+  cursor: pointer;
+}
+.create-content-section {
+  padding: 2em 0.5em;
+}
+p.section-title {
+  padding: 2em 0 0 0;
+  font-size: 1em;
+  color: #adacac;
+}
+button.btn.btn-info.add-content {
+  padding: 0.5em 1.5em;
+  font-size: 1em;
+}
+.section-inner-content {
+  padding: 1em 0.7em;
+}
+.section-intro p {
+  font-size: 2rem;
+  color: #9a9696;
+}
+.section-detail-inner input {
+  padding: 1.6em 0.6em;
+  font-size: 1.5rem;
+}
+.section-detail-inner {
+  padding: 2em;
+  background-color: #f7f7f7;
+}
+.section-inner-content.nav.nav-tabs {
+  padding: 0.2em;
+}
+.section-inner-content .nav.nav-tabs li {
+  padding: 0.5em 0.5em;
+}
+.section-inner-content .nav.nav-tabs li.active {
+  border-bottom: 3px solid #17a2b8;
+}
+.section-inner-content .tab-content {
+  padding: 1em;
+  border: 1px solid #e6dddd;
+}
+.section-inner-content .nav-tabs a {
+  color: #b1a9a9;
+  font-size: 1.7rem;
+}
+.option-btn .btn {
+  font-size: 1.5rem;
+}
+
+.section-inner-content .select-option i.fa.fa-plus {
+  padding: 3em 4em;
+  border: 1px solid #eae5e5;
+  cursor: pointer;
+}
+.create-sec-container-main {
+  height: 82vh;
+  overflow-y: scroll;
+}
+
+/*plan your course end*/
+
+/*profile page CSS Start*/
+
+.profile-inner-section {
+  width: 80%;
+}
+.input-group.phone-number {
+  width: 65%;
+}
+.input-group {
+  width: 65%;
+}
+div#pwd-change {
+  width: 65%;
+}
+.profile-inner-section i.fa.fa-pencil {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  color: #0eb3a3;
+}
+
+span.input-group-addon.tick-id {
+  background-color: #eaeaea;
+  z-index: 9999999 !important;
+  width: 5rem;
+  border: 1px solid #dcdcdc;
+}
+
+span.input-group-addon.wrong-id {
+  background-color: #eaeaea;
+  z-index: 9999999 !important;
+  width: 5rem;
+  border: 1px solid #dcdcdc;
+}
+
+span.input-group-addon.tick-id .fa {
+  position: absolute;
+  top: 1em;
+  right: 4.3em;
+  color: #0eb3a3;
+}
+
+span.input-group-addon.wrong-id .fa {
+  position: absolute;
+  top: 1em;
+  right: 1.3em;
+  color: #f44336;
+}
+
+.profile-inner-section #textarea {
+  font-size: 1.5rem;
+}
+.profile-inner-section {
+  width: 100%;
+  height: 80vh;
+  overflow-y: scroll;
+}
+.likes-area a {
+  background-color: #f1f1f1;
+  padding: 0.7em 1.5em;
+  border-radius: 50em;
+  color: #868686;
+  margin: 0 0.2em;
+  font-size: 1.2rem;
+}
+.profile-inner-section .likes-area {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.profile-inner-section i.fa.fa-eye {
+  position: absolute;
+  top: 1em;
+  right: 1.3em;
+  color: #ada6a5;
+}
+div#pwd-change a {
+  color: #737373;
+}
+.likes-area a .fa {
+  color: #0dc5be;
+}
+
+.pwd-quality small {
+  font-size: 1.5rem;
+}
+span#strog-id {
+  color: #09cc55;
+}
+span#medium-id {
+  color: #ffae6b;
+}
+span#weak-id {
+  color: #ff0000;
+}
+
+.pwd-update-buttons-sec button {
+  font-size: 1.5rem;
+}
+.pwd-update-buttons-sec {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em 0;
+}
+
+/*profile page CSS End*/
+
+/*main course CSS start */
+.search-filter-course {
+  display: flex;
+  justify-content: space-between;
+}
+.input-group input#search-query {
+  width: 15em !important;
+}
+span.input-group-addon.search-id {
+  background-color: #fbf8f8;
+  z-index: 9999999 !important;
+  width: 5rem;
+  border: 1px solid #dcdcdc;
+}
+.search-filter-course i.fa.fa-search {
+  position: absolute;
+  top: 0.6em;
+  right: 1.3em;
+  color: #999999;
+}
+.search-filter-course .form-group {
+  margin-bottom: 0;
+}
+
+.search-filter-course .input-group {
+  width: auto;
+}
+.search-filter-course select#select-query-options {
+  width: 10em !important;
+  position: absolute;
+  left: 20em;
+  font-size: 1.6rem;
+  color: #9f9494;
+}
+
+.search-filter-course button#createbtn {
+  font-size: 1.5rem;
+  padding: 0 1.4em;
+}
+.course-search-results {
+  padding: 1em 1em;
+}
+.course-search-results {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.course-search-results .courser-title-content {
+  padding: 0 2em;
+  line-height: 3em;
+}
+.course-search-results .courser-title-content button {
+  font-size: 1.5rem;
+}
+div#main-course-search-results {
+  height: 66vh;
+  overflow-y: scroll;
+}
+.course-edit.text-right {
+  padding: 0 2em;
+}
+.course-edit.text-right button.btn.btn-default {
+  font-size: 1.4rem;
+  background-color: #f3f3f3;
+  padding: 0.5em 1em;
+}
+/* main course CSS start */
+
+/*subscribers CSS start */
+h2.subscribed {
+  flex: 1;
+}
+h2.subscribed span {
+  color: #716d6d;
+  font-size: 1.8rem;
+}
+.search-box-subscribe .fa {
+  padding: 0em 1em;
+}
+.container.subscrbe-container {
+  padding: 2em 0;
+  height: 85vh;
+  /* overflow: scroll; */
+}
+/*subscribers CSS end */
+
+/*video details Start */
+.video-section-detail-head {
+  padding: 2em 0em;
+}
+.detail-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.progress-detail {
+  display: inline-flex;
+  justify-content: space-between;
+}
+.video-section-inner {
+  padding: 1em 0;
+}
+
+.bar-progress span {
+  position: absolute;
+  top: 1.7em;
+  z-index: 9;
+  left: 1.2em;
+  color: #000;
+}
+
+.detail-head h1 {
+  flex: 0.8;
+}
+
+.bar-progress {
+  width: 5em;
+  height: 5em;
+  top: 0em;
+  bottom: 0;
+  right: 1em;
+  margin: auto;
+  position: absolute;
+  background: #fa0 -webkit-linear-gradient(left, #fa0 50%, #0af 50%);
+  background: #e5e5e5 linear-gradient(to right, #e5e5e5 50%, #13c2b1 50%);
+  color: #0af;
+  border-radius: 50%;
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+@-webkit-keyframes background {
+  50% {
+    background-color: currentColor;
+  }
+}
+
+@keyframes background {
+  50% {
+    background-color: currentColor;
+  }
+}
+
+.bar-progress::after {
+  content: "";
+  position: absolute;
+  width: 85%;
+  height: 85%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.bar-progress::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: inherit;
+  height: 100%;
+  width: 50%;
+  bottom: 0;
+  right: 0;
+  border-radius: 0 100% 100% 0 / 50%;
+  -webkit-transform: rotate(0);
+  transform: rotate(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-animation: 50s spin infinite linear, 100s background infinite step-end;
+  animation: 50s spin infinite linear, 100s background infinite step-end;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  -webkit-animation-delay: inherit;
+  animation-delay: inherit;
+}
+
+.video-sidbar-content h3 {
+  padding: 1em;
+  background-color: #3e3e3e;
+  color: #fff;
+}
+#accordionExample .btn.btn-link .fa {
+  position: absolute;
+  color: #009688;
+  right: 1em;
+  -webkit-text-stroke: 1px #f7f7f7;
+}
+#accordionExample .btn.btn-link {
+  font-size: 1.6rem;
+  color: #454545;
+}
+div#accordionExample p {
+  padding: 0 0.6em;
+  font-size: 1.3rem;
+}
+
+.video-content-inner .nav-tabs .active {
+  background-color: #009688;
+  padding: 0.5em 2.5em;
+  border-radius: 5em;
+  color: #fff !important;
+}
+.video-content-inner .nav-tabs .nav-link {
+  color: #454545;
+}
+
+.video-content-inner h4 {
+  font-size: 1.8rem;
+  padding: 1em 0;
+}
+
+.video-content-inner ul.video-inerul {
+  padding: 1em 0;
+}
+.video-content-inner ul.video-inerul li {
+  line-height: 1.9em;
+  color: #868282;
+}
+.video-sidbar-content {
+  padding: 0;
+}
+.video-sidbar-content {
+  position: absolute;
+  right: 1em;
+  top: 9em;
+  transition: all 0.1s ease;
+}
+.fixed-class {
+  position: fixed;
+  right: 1em;
+  top: 0;
+  transition: all 0.1s ease;
+}
+
+.video-sidbar-content2 {
+  position: absolute;
+  right: 3em;
+  top: 65%;
+  transition: all 0.1s ease;
+}
+
+.fixed-class2 {
+  position: fixed;
+  right: 3em;
+  top: 10%;
+  transition: all 0.1s ease;
+}
+.video-detail-banner-2 .inside-content {
+  padding: 2em 0;
+}
+.video-detail-banner-2 .this-course-ul {
+  list-style: disc;
+  padding: 0 1.5em;
+  color: #828282;
+}
+.video-detail-banner-2 .this-course-ul li {
+  line-height: 1.7em;
+}
+.video-detail-banner-2 h3 {
+  font-size: 1.8rem;
+  padding: 1em 0;
+}
+#accordionExample2 .btn.btn-link .fa {
+  position: absolute;
+  color: #009688;
+  right: 1em;
+  -webkit-text-stroke: 1px #f7f7f7;
+}
+#accordionExample2 .btn.btn-link {
+  font-size: 1.6rem;
+  color: #454545;
+}
+.video-sidbar-content2 h3 {
+  background-color: whitesmoke;
+  padding: 1em 1em;
+  font-size: 1.3em;
+}
+.about-instructor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2em;
+}
+.video-content-inner-side-accrdian {
+  padding: 2em 0;
+}
+.about-instructor .img-sec {
+  margin: 0 1em;
+  width: 10em;
+  flex: 0.8;
+}
+.about-instructor .content {
+  flex: 3;
+}
+.about-instructor .img-sec img {
+  border-radius: 50%;
+  height: 15rem;
+  width: 15rem;
+}
+.button-sec-thiscourse.text-center {
+  padding: 1em 0;
+}
+.button-sec-thiscourse button {
+  font-size: 1.6rem;
+}
+.button-sec-thiscourse h2 {
+  font-size: 2.5rem;
+}
+.button-sec-thiscourse h2 span {
+  font-size: 1.5rem;
+  text-decoration: line-through;
+}
+small.rating-start-instructor {
+  font-size: 1.6rem;
+}
+small.rating-start-instructor .fa {
+  padding: 0 0.5em 0 0em;
+}
+.user-feeds {
+  padding: 4em 0;
+}
+
+.user-feeds p i.fa.fa-star {
+  color: #f7a619;
+}
+.user-feeds h2 {
+  font-size: 5rem;
+}
+.user-feeds .progress {
+  display: -ms-flexbox;
+  display: flex;
+  height: 2rem;
+  overflow: hidden;
+  background-color: #e9ecef;
+  border-radius: 0.25rem;
+  margin: 0 0 1.5em;
+}
+
+.progress-bar {
+  background-color: #d6d6d6;
+}
+.user-feeds .row {
+  padding: 2em 0;
+}
+
+.user-review-sections {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 0;
+}
+.user-review-sections .inner-content-img {
+  flex: 0.3;
+}
+.user-review-sections .inner-content {
+  flex: 0.85;
+}
+.review-btn-n button.btn.btn-large.btn-info {
+  font-size: 1.8rem;
+}
+.more-course-section {
+  padding: 5em 0;
+}
+.more-course-flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 0;
+}
+.more-course-section .btn-info {
+  font-size: 1.8rem;
+}
+.more-course-flex img {
+  width: 80%;
+}
+/*video details End */
+
+/*video course section details Starts */
+section.video-detail-banner {
+  background-color: #292929;
+  height: 80vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.video-detail-banner img.img-fluid {
+  padding: 5em 0;
+}
+.video-detail-banner .baner-content {
+  padding: 6em 2em;
+}
+.video-detail-banner h3 {
+  color: #fff;
+  font-size: 2.5rem;
+}
+p.rating {
+  color: #fff;
+}
+p.rating .fa {
+  color: #ffc107;
+  padding-left: 0.5em;
+}
+p.rating span {
+  margin: 0 1em;
+}
+
+.baner-content p {
+  color: #fff;
+}
+.baner-content p b {
+  padding: 0 0.5em;
+}
+
+h4.price {
+  font-size: 3.3rem;
+  color: #fff;
+}
+
+p.text-blue-p {
+  color: #009688;
+}
+span.not {
+  font-size: 1.6rem;
+  color: #e7e7e7;
+  text-decoration: line-through;
+}
+span.wish {
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 0 1em;
+}
+.cart-btn .btn-info {
+  font-size: 1.7rem;
+  border-radius: 0;
+  padding: 0.5em 1.5em;
+}
+.cart-btn .btn-default {
+  font-size: 1.7rem;
+  border-radius: 0;
+  color: #17a2b8;
+  padding: 0.5em 1.5em;
+  background-color: #efefef;
+}
+.cart-btn {
+  padding: 1em 0;
+}
+
+/*video course section details Ends*/
+
+/*checkout page CSS Start*/
+
+.checkout-section {
+  padding: 2em 0;
+}
+.order-summary-section {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1em 1em 0 0;
+  align-items: center;
+  border-bottom: 1px solid #d4cbcb;
+  box-shadow: 1px 9px 9px 2px #8e878721;
+}
+.order-summary-section .order-content {
+  padding: 0 1em;
+  flex: 1;
+}
+.order-summary-section .img {
+  flex: 0.3;
+}
+.order-summary-section .order-content h4 {
+  font-size: 2rem;
+}
+.row.order-summary h3:first-child {
+  font-size: 2rem;
+  /* padding: .5em 0; */
+}
+.order-summary-section .order-content p {
+  font-size: 1.6rem;
+}
+.order-summary-section .discount h3 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 2.7rem !important;
+}
+.order-summary-section .discount p {
+  text-decoration: line-through;
+  font-size: 1.4rem;
+  color: #ababab;
+}
+.checkout-section .payment-content-checkout h1 {
+  font-weight: 700;
+  font-size: 2.7rem;
+}
+.order-summary-section .discount {
+  text-align: center;
+}
+
+.payment-container {
+  padding: 1.5em 1em 1em 1em;
+}
+.payment-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.payment-content {
+  padding: 1em 1em;
+  background-color: #f7f7f7;
+  line-height: 3.5rem;
+}
+.payment-section p:first-child {
+  margin-bottom: 0;
+  padding: 0px 5em 0 0;
+}
+.payment-section p {
+  margin-bottom: 0;
+}
+.button-payment {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 1em;
+  background-color: #12b2a6;
+  margin: 1em 0;
+}
+.button-payment p:first-child {
+  color: #fff;
+  font-size: 2rem;
+}
+.button-payment p:last-child {
+  color: #fff;
+  font-size: 2.5rem;
+}
+.checkout-section .order-summary {
+  padding: 2em 0;
+}
+
+.checkout-section .payment-final {
+  padding: 3em 0;
+}
+
+.checkout-section .nav-tabs .nav-link.active {
+  padding: 0.5em 0.5em;
+  border-bottom: 0.4rem solid #12b2a6;
+}
+.checkout-section .nav-tabs {
+  border-bottom: 1px solid #dee2e600;
+}
+.checkout-section .nav-tabs .nav-link {
+  padding: 0.5em 0.5em;
+  color: #495057;
+  background-color: #fff;
+}
+.checkout-section .nav-tabs .nav-link {
+  border: 0px solid transparent;
+}
+.payment-final .form-control {
+  display: block;
+  width: 100% !important;
+  padding: 1.5em 1em;
+  font-size: 1.6rem;
+}
+
+.payment-final #inputmonth {
+  padding: 0.6em;
+  height: 5rem;
+}
+.payment-final #inputyear {
+  padding: 0.6em;
+  height: 5rem;
+}
+.pay-finalbtn {
+  margin: 2em 12em;
+}
+.pay-finalbtn button {
+  font-size: 2.3rem;
+}
+
+.checkout-section .fa-question-circle:before {
+  content: "\f059";
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+.payment-final #nav-home {
+  background-color: #f7f6f5;
+  padding: 1.5em;
+}
+.order-summary-section .order-content a {
+  color: #009e92;
+  font-size: 1.5rem;
+}
+.checkout-section .payment-content-checkout {
+  padding: 1em 1em;
+}
+.checkout-section .payment-content-checkout small {
+  font-size: 1.4rem;
+  text-decoration: line-through;
+  color: #ababab;
+}
+
+.form-group.coupon-sec .input-group {
+  width: 100%;
+}
+.form-group.coupon-sec .input-group input.form-control.coupon {
+  padding: 1.5em;
+  font-size: 1.7rem;
+}
+.checkout-section .input-group-append .coupon {
+  padding: 0 1.5em;
+  font-size: 1.7rem;
+}
+.checkout-section .form-group.coupon-sec button {
+  font-size: 2rem;
+  padding: 0.5em;
+}
+.checkout-section .order-summary span#course-count {
+  font-size: 1.5rem;
+  color: #ababab;
+  font-style: italic;
+}
+a#close-order-item {
+  position: absolute;
+  right: 0em;
+  font-size: 2rem;
+  color: red;
+}
+/*checkout page CSS End*/
+
+/*media css Start */
+@media (max-width: 1600px) {
+  ul.side-link-desktop li {
+    padding: 0 1em;
+  }
+}
+
+@media (max-width: 1200px) {
+  section.video-detail-banner {
+    height: 30vh;
+  }
+  .pay-finalbtn {
+    margin: auto;
+  }
+  .video-sidbar-content2 {
+    position: absolute;
+    right: 3em;
+    top: 35%;
+    transition: all 0.1s ease;
+  }
+}
+
+@media (max-width: 920px) {
+  .video-detail-banner img.img-fluid {
+    padding: 2em 0;
+  }
+  section.video-detail-banner {
+    background-color: #292929;
+    height: auto;
+  }
+  .video-detail-banner .baner-content {
+    padding: 2em 2em;
+  }
+  .input-group input#search-query {
+    width: auto !important;
+  }
+  .search-filter-course select#select-query-options {
+    width: auto !important;
+  }
+
+  .profile-inner-section {
+    width: 100%;
+  }
+  .input-group.phone-number {
+    width: 100%;
+  }
+  .input-group {
+    width: 100%;
+  }
+  div#pwd-change {
+    width: 100%;
+  }
+
+  label.label-top {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 1.8rem;
+  }
+  .search-filter-course select#select-query-options {
+    position: unset;
+    left: 0;
+  }
+  .detail-head h3 {
+    flex: 0.4;
+  }
+  .detail-head h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .more-course-section .more-course-flex {
+    display: flex;
+    justify-content: center;
+    padding: 2em 0;
+    flex-wrap: wrap;
+  }
+  #accordionExample .btn.btn-link {
+    font-size: 1.2rem;
+    color: #454545;
+  }
+  .video-sidbar-content2 {
+    position: static !important;
+    right: 3em;
+    top: 40%;
+    transition: all 0.1s ease;
+    padding: 0;
+  }
+  ul.side-link-desktop li {
+    padding: 0 1em;
+  }
+  ul.side-link-desktop a {
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 5rem;
+  }
+  .more-course-section .more-course-flex img {
+    width: 100%;
+    text-align: center;
+  }
+  .fixed-class {
+    position: static;
+    right: 1em;
+    top: 0;
+    transition: all 0.1s ease;
+  }
+  .fixed-class2 {
+    position: static;
+    right: 1em;
+    top: 0;
+    transition: all 0.1s ease;
+  }
+
+  .video-sidbar-content {
+    position: static;
+    right: 1em;
+    top: 9em;
+    transition: all 0.1s ease;
+  }
+  .video-detail-banner-2 .inside-content {
+    padding: 2em 2em;
+  }
+  .form-control {
+    display: block;
+    width: 100% !important;
+  }
+
+  .about-instructor .content {
+    flex: auto;
+  }
+  .about-instructor .img-sec {
+    flex: auto;
+  }
+  .about-instructor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2em;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  select#price_selcet_2 {
+    width: 100% !important;
+  }
+  .video-icon.relative .text-center.inner-icon-text {
+    padding: 5em 0em;
+    border: 1px solid #dad8d8;
+    margin: 2% 10%;
+    cursor: pointer;
+  }
+  .profile-inner-section .likes-area {
+    flex-wrap: wrap;
+  }
+  .likes-area a {
+    margin: 0.3em 0.2em;
+  }
+  .course-search-results {
+    flex-wrap: wrap;
+  }
+  .course-edit.text-right {
+    padding: 0 1em;
+  }
+  .search-filter-course {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 521px) {
+  ul.side-link-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .detail-head h1 {
+    flex: 0.6;
+    font-size: 1.6rem;
+    padding: 1em;
+  }
+  .video-sidbar-content {
+    position: static;
+    right: 1em;
+    top: 9em;
+    transition: all 0.1s ease;
+  }
+  .left-content {
+    background-color: #000000;
+    padding: 0;
+    height: auto;
+  }
+  ul.side-link-desktop {
+    display: none;
+  }
+  ul.side-link-mobile {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4em;
+  }
+  .detail-head h3 {
+    flex: 1;
+    font-size: 1.6rem;
+  }
+  .Pricing-section form.course-title-form {
+    height: 85vh;
+    overflow-y: inherit;
+  }
+  .container.subscrbe-container {
+    padding: 2em 0;
+    height: 85vh;
+    overflow-y: inherit;
+  }
+  div#main-course-search-results {
+    height: 66vh;
+    overflow-y: inherit;
+  }
+
+  .profile-inner-section {
+    width: 100%;
+    height: 80vh;
+    overflow-y: inherit;
+  }
+  div#main-course-search-results {
+    height: 66vh;
+    overflow-y: inherit;
+  }
+
+  .create-sec-container-main {
+    height: 82vh;
+    overflow-y: inherit;
+  }
+}
+/*media css end */

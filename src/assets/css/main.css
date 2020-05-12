@@ -1,3 +1,4 @@
+@import "./main1.css";
 @font-face {
   font-family: "MyriadPro";
   src: url("../fonts/MyriadPro-Regular/MyriadPro-Regular.eot"); /* IE9 Compat Modes */
@@ -111,7 +112,7 @@ ul {
   font-weight: bold;
   font-family: "Xirod", sans-serif !important;
 }
-.signup-links button {
+.signup-links {
   background-color: var(--color-primary);
   padding: 0.5em 1em;
   color: #fff !important;
@@ -119,6 +120,20 @@ ul {
   transition: all 0.3s ease-in-out;
   border: none;
   outline-style: none;
+}
+.account-links {
+  background-color: var(--color-primary) !important;
+  padding: 1rem 1rem;
+
+  color: #fff !important;
+  font-size: 1.4rem;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  outline-style: none;
+  font-family: "Xirod", sans-serif;
+}
+.account-links:hover {
+  color: black !important;
 }
 .signup-links button:focus {
   outline-style: none;
@@ -169,9 +184,99 @@ ul.main-menu-links-mobile a {
   z-index: 1 !important;
   height: 40px;
 }
+/* button dropdown account */
+.btn-dropdown-acc {
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+.btn-dpd-acc-content {
+  display: none;
+  position: absolute;
+  background-color: #151515de;
+  max-width: 100%;
+  box-shadow: 0px 0.8rem 1.6rem 0px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  transition: all 0.3s ease-in-out;
+  padding: 0.5em 0.5em;
+}
+.btn-dpd-acc-content .btn-acc-title {
+  font-size: 1.5rem;
+  font-family: "Xirod", sans-serif;
+  color: var(--color-primary);
+}
+.btn-dpd-acc-content .btn-acc-info {
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+.btn-dpd-acc-content .btn-acc-info:hover {
+  font-size: 2rem;
+  color: var(--color-primary);
+  cursor: pointer;
+}
+.btn-dropdown-acc:hover .btn-dpd-acc-content {
+  display: block;
+}
+/* button dropdown account */
+
+/* button dropdown section starts */
+.button-dropdown {
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+.button-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #151515de;
+  max-width: 100%;
+  color: var(--color-primary);
+
+  box-shadow: 0px 0.8rem 1.6rem 0px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+
+  transition: all 0.3s ease-in-out;
+}
+.button-dropdown-content .content-wrapper {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+
+  cursor: pointer;
+  padding: 10px 10px;
+}
+.button-dropdown-content .content-wrapper:hover {
+  background-color: black;
+}
+.button-dropdown-content .content-wrapper .btn-dpd-img {
+  width: 50%;
+  height: 40px;
+  margin-right: 10px;
+}
+.button-dropdown-content .content-wrapper .btn-dpd-info {
+  width: 50%;
+  font-size: 1.3rem;
+}
+/* Change color of dropdown links on hover */
+.button-dropdown-content a:hover {
+  background-color: black;
+  color: var(--color-primary);
+}
+
+/* Show the dropdown menu on hover */
+.button-dropdown:hover .button-dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.button-dropdown:hover .button-dropbtn {
+  background-color: transparent;
+}
+
+/* button dropdown section ends */
 
 /* dropdowns section */
-
 /* Dropdown Button */
 .m-dropbtn {
   color: white;
@@ -907,7 +1012,7 @@ div#signinmodal {
   z-index: 100 !important;
 }
 div#signinmodal .modal-content {
-  background-color: black;
+  background-color: #151515de;
   padding: 2rem;
   margin: 0 auto;
   width: 70%;
@@ -958,6 +1063,7 @@ div#signinmodal .form-control:focus {
   border: none;
   border-radius: 0;
   font-size: 2rem !important;
+  cursor: pointer;
 }
 .sign-bottom {
   display: flex;
@@ -1246,6 +1352,232 @@ ul.iner-product {
   cursor: pointer;
 }
 
+/*become a instructor modal css  start */
+
+div#becomeinstructormodal .modal-content {
+  background-color: #151515de;
+  padding: 2rem;
+  margin: 0 auto;
+  width: 90%;
+  min-height: 70vh;
+}
+div#becomeinstructormodal h1.signup-heading {
+  text-align: center;
+}
+div#becomeinstructormodal h1.signup-heading span {
+  color: #fff;
+}
+div#becomeinstructormodal .sign-in {
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  border-radius: 0;
+  background-color: #423b3b03;
+  border: 1px solid #ffffff7a;
+  color: #fff;
+}
+.next-inst-btn .sing-in-btn {
+  padding: 0.3em 2em;
+}
+.genders {
+  display: flex;
+}
+.genders label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  font-size: 1.3rem;
+}
+div#becomeinstructormodal .fb-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0px;
+}
+div#becomeinstructormodal .fb-section img.img-fluid {
+  width: 2.5rem;
+  margin: 0 1.2em;
+}
+div#becomeinstructormodal .text-center.footer-login p {
+  color: #fff;
+  font-size: 1.2rem;
+}
+div#becomeinstructormodal .text-center.footer-login a {
+  color: #14c5b9;
+}
+/*become a instructor text modal css  start */
+
+/*become a instructor text modal css  start */
+
+div#becomeinstructortext .modal-content {
+  background-color: #151515de;
+  padding: 2rem;
+  margin: 0 auto;
+  width: 90%;
+  min-height: 70vh;
+}
+div#becomeinstructortext h1.signup-heading {
+  text-align: center;
+}
+div#becomeinstructortext .footer-login p {
+  color: #fff;
+  font-size: 1.2rem;
+}
+div#becomeinstructortext .footer-login a {
+  color: #14c5b9;
+}
+div#becomeinstructortext textarea.form-control {
+  height: 30vh !important;
+}
+
+div#becomeinstructortext .sign-in {
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  border-radius: 0;
+  background-color: #423b3b03;
+  border: 1px solid #ffffff7a;
+}
+.intrest-section p {
+  color: #fff;
+}
+.intrest-section div {
+  display: flex;
+  justify-content: space-between;
+}
+.intrest-section div a {
+  color: #fff;
+  padding: 0.5em 0.6em;
+  border: 1px solid #f7efef8f;
+  border-radius: 3em;
+}
+.intrest-section div a:first-child {
+  background-color: antiquewhite;
+  color: #00a99d;
+}
+
+.intrest-section div label.custom-control-label {
+  color: #ffff;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 6em;
+}
+.intrest-section .custom-control-label::before {
+  position: absolute;
+  top: 0.6rem;
+  left: -6.8rem;
+  display: block;
+  width: 1.2rem;
+  height: 1.2rem;
+  pointer-events: none;
+  content: "";
+  background-color: #fff;
+  border: #adb5bd solid 1px;
+}
+.intrest-section .custom-control {
+  padding: 0.7em 0.5em;
+}
+
+#becomeinstructortext .intrest-section {
+  height: 20rem;
+  overflow-y: scroll;
+  padding: 1em;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  background-color: #00a99d;
+}
+
+.intrest-section div .fa-calendar:before {
+  content: "\f073";
+  color: #fff;
+  position: absolute;
+  right: 1em;
+}
+/*become a instructor modal css  end */
+
+/*login instructor modal css  start */
+div#loginstructormodal .modal-content {
+  background-color: #151515de;
+  padding: 2rem;
+  margin: 0 auto;
+  width: 80%;
+  /* min-height: 70vh; */
+}
+
+div#loginstructormodal h1.signup-heading {
+  text-align: center;
+}
+
+div#loginstructormodal .sign-in {
+  font-size: 1.5rem;
+  padding: 2rem;
+  border-radius: 0;
+  background-color: #423b3b03;
+  border: 1px solid #ffffff7a;
+  color: #fff;
+}
+div#loginstructormodal .fb-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0;
+}
+div#loginstructormodal .fb-section img.img-fluid {
+  width: 2.5rem;
+  margin: 0 1em;
+}
+div#loginstructormodal .footer-login p {
+  color: #fff;
+  font-size: 1.2rem;
+}
+div#loginstructormodal .footer-login a {
+  color: #14c5b9;
+  font-size: 1.2rem;
+}
+span.line-adjust-t {
+  border: 1px solid #ffffff54;
+  margin: 0 40%;
+}
+/*login instructor modal css  end */
+
+/*Welcome screen CSS Start*/
+
+div#welcomescreen .modal-content {
+  background-color: #151515de;
+  padding: 2rem;
+  margin: 0 auto;
+  width: 90%;
+  min-height: 60vh;
+}
+
+div#welcomescreen h1.Sign-heading.text-center {
+  color: #00a99d;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 1rem;
+  text-align: center;
+}
+div#welcomescreen .welcome-screen h2 {
+  color: #fff;
+  font-size: 2rem;
+}
+div#welcomescreen .welcome-screen h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 800;
+}
+.modal-body.welcome-screen {
+  padding: 6rem 2em;
+}
+.modal-body.welcome-screen button {
+  padding: 0.3em 1em;
+  bottom: 0;
+  font-size: 2rem;
+  float: right;
+}
+/*Welcome screen CSS End*/
+
 /*footer section start */
 ul.footer-links {
   display: flex;
@@ -1256,6 +1588,11 @@ ul.footer-links {
 ul.footer-links a {
   padding: 1.5rem;
   color: #fff;
+}
+ul.footer-links p {
+  padding: 1.5rem;
+  color: #fff;
+  cursor: pointer;
 }
 section.footer-section {
   background-color: #252525;
@@ -1280,7 +1617,13 @@ section.footer-section {
 
   .signup-links button {
     background-color: var(--color-primary);
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1rem;
+  }
+  .account-links button {
+    background-color: var(--color-primary);
+    padding: 0.5rem 1rem;
+    font-family: "Xirod", sans-serif !important;
+    color: white;
   }
   .bg-dark {
     background-color: #fff !important;
@@ -1352,6 +1695,11 @@ section.footer-section {
     font-size: 50%;
   }
 
+  .signup-links button {
+    background-color: var(--color-primary);
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
+  }
   /* nav-bar main menu */
   .main-menuadjust.relative {
     width: 100%;
@@ -1409,6 +1757,21 @@ section.footer-section {
   .product-first,
   .product-second {
     flex: auto !important;
+  }
+  /* account buttons */
+  .account-links {
+    background-color: var(--color-primary) !important;
+    padding: 0.5rem 0.5rem;
+
+    color: #fff !important;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    outline-style: none;
+    font-family: "Xirod", sans-serif;
+  }
+  .account-links:hover {
+    color: black !important;
   }
 
   /*footer-section*/
@@ -1640,6 +2003,28 @@ section.footer-section {
     max-width: 75rem;
     margin: 1.75rem auto;
   }
+
+  /* /became ann instrcutor  */
+
+  .intrest-section div {
+    display: flex;
+    font-size: 0.8rem;
+  }
+
+  /* button dropdown account */
+
+  .btn-dpd-acc-content .btn-acc-title {
+    font-size: 1.2rem;
+    font-family: "Xirod", sans-serif;
+    color: var(--color-primary);
+  }
+  .btn-dpd-acc-content .btn-acc-info {
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /* button dropdown account */
   /*footer-section*/
   ul.footer-links {
     display: flex;
@@ -1673,6 +2058,12 @@ section.footer-section {
   .shop-inner-content .flex-container {
     display: flex;
     /* justify-content: space-between; */
+    flex-wrap: wrap;
+  }
+
+  /* //became instructor */
+  .intrest-section div {
+    display: flex;
     flex-wrap: wrap;
   }
 }

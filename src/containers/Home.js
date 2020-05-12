@@ -2,7 +2,9 @@ import { connect } from "react-redux";
 import HomeComponent from "../components/HomePage";
 
 const mapStateToProps = (state, ownProps) => {
-  return {};
+  return {
+    login: state.Home.login
+  };
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => {

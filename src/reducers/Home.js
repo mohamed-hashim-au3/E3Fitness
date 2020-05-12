@@ -1,11 +1,15 @@
 const initialState = {
-  videos: []
+  videos: [],
+  login: false
 };
 
 export const Home = (state = initialState, action) => {
   switch (action.type) {
-    case "FIRS_REDUCER":
-      return state;
+    case "LOGIN":
+      return {
+        ...state,
+        login: action.payload
+      };
     default:
       return state;
   }

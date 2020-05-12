@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { ReactComponent as Fbicon } from "../assets/images/fb-icon.svg";
+import { connect } from "react-redux";
 import UserSignUp from "./UserSignUp";
 import { Modal, Button } from "react-bootstrap";
 // import img1 from "../assets/images/captcha.png";
-function UserSignIn() {
+function UserSignIn(props) {
   const [show, setShow] = useState(false);
   const [isRegister, setIsRegister] = useState(false);
   const handleClose = () => {
@@ -14,10 +15,14 @@ function UserSignIn() {
     setShow(true);
     setIsRegister(false);
   };
+  const handleSubmit = e => {
+    e.preventDefault();
+    props.handleLogin();
+  };
 
   return (
     <>
-      <button className="mr-3 navbar-text signup-links" onClick={handleShow}>
+      <button className=" navbar-text signup-links mr-3" onClick={handleShow}>
         log in/ sign up
       </button>
 
@@ -37,7 +42,7 @@ function UserSignIn() {
             <br />
             <p className="text-white">SIgn In</p>
             <div>
-              <form>
+              <form onSubmit={handleSubmit}>
                 <div className="form-group">
                   <input
                     type="email"
@@ -79,6 +84,7 @@ function UserSignIn() {
                         setShow(false);
                         setIsRegister(true);
                       }}
+                      style={{ cursor: "pointer" }}
                     >
                       Sign Up
                     </div>
@@ -88,7 +94,7 @@ function UserSignIn() {
                   <span className="img-fluid">
                     <Fbicon />
                   </span>
-                  <p>Sign in with facebbok</p>
+                  <p>Sign in with facebook</p>
                 </div>
               </form>
             </div>
@@ -102,5 +108,9 @@ function UserSignIn() {
     </>
   );
 }
-
-export default UserSignIn;
+const mapDispatchToProps = (dispatch, ownProps) => {
+  return {
+    handleLogin: () => dispatch({ type: "LOGIN", payload: true })
+  };
+};
+export default connect(null, mapDispatchToProps)(UserSignIn);
